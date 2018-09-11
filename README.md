@@ -1,10 +1,7 @@
-# Ark Mobile
+# PHANTOM Mobile
 
-<p align="center">
-    <img src="./banner.png" />
-</p>
 
-> A Wallet for Everyone
+> PHANTOM in your pocket
 
 [![Build Status](https://badgen.now.sh/travis/ArkEcosystem/mobile-wallet)](https://travis-ci.org/ArkEcosystem/mobile-wallet)
 [![Latest Version](https://badgen.now.sh/github/release/ArkEcosystem/mobile-wallet)](https://github.com/ArkEcosystem/mobile-wallet/releases/latest)
