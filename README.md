@@ -1,10 +1,7 @@
-# Ark Mobile
+# PHANTOM Mobile
 
-<p align="center">
-    <img src="./banner.png" />
-</p>
 
-> A Wallet for Everyone
+> PHANTOM in your pocket
 
 [![Build Status](https://badgen.now.sh/travis/ArkEcosystem/mobile-wallet)](https://travis-ci.org/ArkEcosystem/mobile-wallet)
 [![Latest Version](https://badgen.now.sh/github/release/ArkEcosystem/mobile-wallet)](https://github.com/ArkEcosystem/mobile-wallet/releases/latest)
@@ -13,9 +10,7 @@
 ARK’s mobile wallet is a hybrid application (using the same codebase for Android and iOS which helps with coordinated development). Created using Ionic framework and ARK’s [TypeScript API](https://github.com/ArkEcosystem/ark-ts) to interact with the ARK network via your mobile phone, anytime, anywhere (as long as you have an internet connection).
 
 ## Download
-
-- [Google Play](https://play.google.com/store/apps/details?id=io.ark.wallet.mobile)
-- [App Store](https://itunes.apple.com/us/app/mobile-ark/id1324625967)
+Coming Soon
 
 ## Features
 
@@ -23,10 +18,10 @@ ARK’s mobile wallet is a hybrid application (using the same codebase for Andro
 - Generate a new passphrase.
 - Encrypt access to your profile with a custom 6 digit PIN (AES256+PBKDF2).
 - Most transaction types are available: send, receive, vote, unvote, register a delegate.
-- Connects to both mainnet and devnet.
-- Option for additional profiles (separate profiles for different ARK addresses or networks).
+- Connects to both mainnet and testnet.
+- Option for additional profiles (separate profiles for different PHANTOM addresses or networks).
 - Option to add contacts and easily transact with them.
-- Total balance of your combined ARK addresses.
+- Total balance of your combined PHANTOM addresses.
 - Wallet backup - input your selected PIN to decrypt your wallet and gain view of your private data.
 - Change PIN - if you want to change your encryption/decryption PIN you can easily do so..
 - Clear Data — you can clear all your data from the phone.
@@ -81,7 +76,7 @@ $ npm run test:e2e
 
 ## Security
 
-If you discover a security vulnerability within this application, please send an e-mail to security@ark.io. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this application, please send an e-mail to security@phantom.org. All security vulnerabilities will be promptly addressed.
 
 ## Contributing
 
