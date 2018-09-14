@@ -5,7 +5,7 @@ import { UserDataProvider } from '@providers/user-data/user-data';
 import { ContactsProvider } from '@providers/contacts/contacts';
 
 import { Contact, QRCodeScheme } from '@models/model';
-import { PublicKey } from 'ark-ts/core';
+import { PublicKey } from 'phantom-ts/core';
 
 import { QRScannerComponent } from '@components/qr-scanner/qr-scanner';
 

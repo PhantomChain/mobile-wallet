@@ -2,7 +2,7 @@ import {Component, OnDestroy} from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 
 import { Subject } from 'rxjs/Subject';
-import { ArkApiProvider } from '@providers/ark-api/ark-api';
+import { PhantomApiProvider } from '@providers/phantom-api/phantom-api';
 import lodash from 'lodash';
 
 @IonicPage()
@@ -26,12 +26,12 @@ export class RegisterDelegatePage implements OnDestroy {
     public navCtrl: NavController,
     public navParams: NavParams,
     public viewCtrl: ViewController,
-    private arkApiProvider: ArkApiProvider,
+    private phantomApiProvider: PhantomApiProvider,
   ) {
-    this.arkApiProvider.fees.subscribe((fees) => this.fee = fees.delegate);
-    this.symbol = this.arkApiProvider.network.symbol;
+    this.phantomApiProvider.fees.subscribe((fees) => this.fee = fees.delegate);
+    this.symbol = this.phantomApiProvider.network.symbol;
 
-    this.arkApiProvider.delegates.takeUntil(this.unsubscriber$).subscribe((delegates) => this.delegates = delegates);
+    this.phantomApiProvider.delegates.takeUntil(this.unsubscriber$).subscribe((delegates) => this.delegates = delegates);
   }
 
   validateName() {

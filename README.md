@@ -1,22 +1,17 @@
-# Ark Mobile
+# PHANTOM Mobile
 
-<p align="center">
-    <img src="./banner.png" />
-</p>
+> PHANTOM in your pocket
 
-> A Wallet for Everyone
-
-[![Build Status](https://badgen.now.sh/circleci/github/ArkEcosystem/mobile-wallet)](https://circleci.com/gh/ArkEcosystem/mobile-wallet)
-[![Codecov](https://badgen.now.sh/codecov/c/github/arkecosystem/mobile-wallet)](https://codecov.io/gh/arkecosystem/mobile-wallet)
-[![Latest Version](https://badgen.now.sh/github/release/ArkEcosystem/mobile-wallet)](https://github.com/ArkEcosystem/mobile-wallet/releases/latest)
+[![Build Status](https://badgen.now.sh/travis/PhantomEcosystem/mobile-wallet)](https://travis-ci.org/PhantomEcosystem/mobile-wallet)
+[![Latest Version](https://badgen.now.sh/github/release/PhantomEcosystem/mobile-wallet)](https://github.com/PhantomEcosystem/mobile-wallet/releases/latest)
+[![Latest Version](https://badgen.now.sh/github/release/PhantomEcosystem/mobile-wallet)](https://github.com/PhantomEcosystem/mobile-wallet/releases/latest)
 [![License: MIT](https://badgen.now.sh/badge/license/MIT/green)](https://opensource.org/licenses/MIT)
 
-The PHANTOM mobile wallet is a hybrid application (using the same codebase for Android and iOS which helps with coordinated development). Created using Ionic framework and ARK’s [TypeScript API](https://github.com/ArkEcosystem/ark-ts) to interact with the ARK network via your mobile phone, anytime, anywhere (as long as you have an internet connection).
+The PHANTOM mobile wallet is a hybrid application (using the same codebase for Android and iOS which helps with coordinated development). Created using Ionic framework and PHANTOM’s [TypeScript API](https://github.com/PhantomEcosystem/phantom-ts) to interact with the PHANTOM network via your mobile phone, anytime, anywhere (as long as you have an internet connection).
 
 ## Download
 
-- [Google Play](https://play.google.com/store/apps/details?id=io.ark.wallet.mobile)
-- [App Store](https://itunes.apple.com/us/app/mobile-ark/id1324625967)
+Coming Soon
 
 ## Features
 
@@ -25,9 +20,9 @@ The PHANTOM mobile wallet is a hybrid application (using the same codebase for A
 - Encrypt access to your profile with a custom 6 digit PIN (AES256+PBKDF2).
 - Most transaction types are available: send, receive, vote, unvote, register a delegate.
 - Connects to both mainnet and devnet.
-- Option for additional profiles (separate profiles for different ARK addresses or networks).
+- Option for additional profiles (separate profiles for different PHANTOM addresses or networks).
 - Option to add contacts and easily transact with them.
-- Total balance of your combined ARK addresses.
+- Total balance of your combined PHANTOM addresses.
 - Wallet backup - input your selected PIN to decrypt your wallet and gain view of your private data.
 - Change PIN - if you want to change your encryption/decryption PIN you can easily do so..
 - Clear Data — you can clear all your data from the phone.
@@ -82,14 +77,14 @@ $ npm run test:e2e
 
 ## Security
 
-If you discover a security vulnerability within this application, please send an e-mail to security@ark.io. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this application, please send an e-mail to security@phantom.org. All security vulnerabilities will be promptly addressed.
 
 ## Contributing
 
 - If you find any bugs, submit an [issue](../../issues) or open [pull-request](../../pulls), helping us catch and fix them.
-- Engage with other users and developers on [ARK Slack](https://ark.io/slack/).
-- Join to our [gitter](https://gitter.im/ark-developers/Lobby).
-- [Contribution bounties](https://docs.ark.io/guidebook/contribution-guidelines/contributing.html).
+- Engage with other users and developers on [PHANTOM Slack](https://phantom.org/slack/).
+- Join to our [gitter](https://gitter.im/phantom-developers/Lobby).
+- [Contribute bounties](./CONTRIBUTING.md).
 - [Help translate](./TRANSLATING.md).
 
 ## Credits
@@ -100,4 +95,4 @@ If you discover a security vulnerability within this application, please send an
 
 ## License
 
-[MIT](LICENSE) © [ArkEcosystem](https://ark.io)
+[MIT](LICENSE) © [PhantomEcosystem](https://phantom.org)

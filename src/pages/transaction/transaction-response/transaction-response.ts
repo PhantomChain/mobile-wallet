@@ -8,7 +8,7 @@ import { UserDataProvider } from '@providers/user-data/user-data';
 import { ToastProvider } from '@providers/toast/toast';
 
 import { Transaction, Wallet, WalletKeys } from '@models/model';
-import { TransactionType, Network } from 'ark-ts';
+import { TransactionType, Network } from 'phantom-ts';
 
 @IonicPage()
 @Component({

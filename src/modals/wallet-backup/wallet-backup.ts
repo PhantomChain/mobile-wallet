@@ -3,7 +3,7 @@ import {IonicPage, ModalController, NavController, NavParams, ViewController} fr
 
 import { UserDataProvider } from '@providers/user-data/user-data';
 import { SettingsDataProvider } from '@providers/settings-data/settings-data';
-import { PrivateKey } from 'ark-ts/core';
+import { PrivateKey } from 'phantom-ts/core';
 import bip39 from 'bip39';
 import { WalletKeys, AccountBackup } from '@models/model';
 

@@ -1,6 +1,6 @@
 <ion-header>
 
-  <ion-navbar no-border class="dark-navbar">
+  <ion-navbar no-border class="dphantom-navbar">
     <h6 class="no-padding no-margin" text-center>{{ title | translate }}</h6>
 
     <ion-buttons end>
@@ -13,10 +13,10 @@
 </ion-header>
 
 <ion-content no-bounce>
-  <ion-grid no-padding class="dark-navbar">
+  <ion-grid no-padding class="dphantom-navbar">
     <ion-row class="account-container">
       <ion-col>
-        <ark-qr-code [address]="account?.address" size="100"></ark-qr-code>
+        <phantom-qr-code [address]="account?.address" size="100"></phantom-qr-code>
         <ion-list class="account-list" no-lines>
           <ion-item text-wrap>
             <p class="item-caption">{{ 'WALLETS_PAGE.PUBLIC_ADDRESS_SHARE' | translate }}</p>

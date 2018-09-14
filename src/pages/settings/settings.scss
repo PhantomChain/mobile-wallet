@@ -25,16 +25,16 @@ page-settings {
   }
 }
 
-.dark-theme {
+.dphantom-theme {
   page-settings {
     ion-item-group {
-      border-color: color($darkColors, primary-background, base);
+      border-color: color($dphantomColors, primary-background, base);
     }
 
     .list {
       .item-block {
         &.item:not(.item-divider) {
-          background-color: color($darkColors, primary-background, base) !important;
+          background-color: color($dphantomColors, primary-background, base) !important;
         }
 
         .item-inner {
@@ -46,7 +46,7 @@ page-settings {
     .list .select-text,
     .list .select-icon-inner,
     .list p {
-      color: lighten(color($darkColors, primary-background, base), 50%);
+      color: lighten(color($dphantomColors, primary-background, base), 50%);
     }
   }
 }

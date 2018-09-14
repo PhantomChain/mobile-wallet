@@ -43,7 +43,7 @@
     "NAME": "이름",
     "NETHASH": "넷해시",
     "MANAGE_NETWORKS": "커스텀 네트워크 설정",
-    "MARKET_SYMBOL_NAME": "거래소 심볼 명 (USD, BTC, 등의 가격 정보를 가져오기 위해...)",
+    "MPHANTOMET_SYMBOL_NAME": "거래소 심볼 명 (USD, BTC, 등의 가격 정보를 가져오기 위해...)",
     "OR_CREATE_NEW": "... 혹은 신규 네트워크 생성",
     "SAVE_SUCCESSFUL": "네트워크 저장 성공!",
     "SEED_SERVER": "시드 서버 URL",
@@ -90,20 +90,20 @@
     "FAST_EASY": "빠르고 쉽습니다",
     "GET_STARTED": "시작하세요",
     "SECURITY": "안전합니다",
-    "TEXT_1": "ARK 를 관리하기 위한 모든 기능을 제공할 것입니다. 언제, 어디서든!",
+    "TEXT_1": "PHANTOM 를 관리하기 위한 모든 기능을 제공할 것입니다. 언제, 어디서든!",
     "TEXT_2": "PBKDF2 알고리즘과 AES-256 암호화를 통해 모든 사용자의 데이터가 안전하게 보관됩니다.",
     "TEXT_3": "프로필과 지갑을 통해 잔액을 확인하고, 송금 및 입금을 할 수 있습니다.",
     "WELCOME": "환영합니다"
   },
   "SIGN_IN_PAGE": {
-    "ARK_WALLET": "ARK 지갑",
+    "PHANTOM_WALLET": "PHANTOM 지갑",
     "CREATE_PROFILE": "프로필 생성",
-    "SLOGAN": "ARK 에코시스템에 오신것을 환영합니다"
+    "SLOGAN": "PHANTOM 에코시스템에 오신것을 환영합니다"
   },
   "SIGN_OUT_PROFILE_TEXT": "프로필에서 로그 아웃 하시겠습니까?",
-  "MARKETS_PAGE": {
-    "MARKET_CAP": "시가 총액",
-    "MARKET_DATA": "시세 정보",
+  "MPHANTOMETS_PAGE": {
+    "MPHANTOMET_CAP": "시가 총액",
+    "MPHANTOMET_DATA": "시세 정보",
     "PERCENTAGE_CHANGE": "24시간 변동",
     "PRICE": "시세",
     "VOLUME": "거래량"
@@ -174,7 +174,7 @@
     "CLEAR_DATA": "데이터 초기화",
     "CLEAR_DATA_TEXT": "프로필, 지갑, 연락처 등 모든 데이터가 삭제됩니다!",
     "CURRENCY": "통화",
-    "DARK_MODE": "다크 모드",
+    "DPHANTOM_MODE": "다크 모드",
     "LANGUAGE": "언어",
     "PRIVACY_POLICY": "개인정보 보호정책",
     "SECURITY": "보안",

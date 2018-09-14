@@ -45,7 +45,7 @@
     <ion-row padding *ngIf="wallets?.length > 0" class="marketcap-container" appMarketNetOnly>
       <ion-col>
         <hr>
-        <h4 class="market-cap-title"><ion-icon name="md-trending-up"></ion-icon> {{ 'MARKETS_PAGE.MARKET_DATA' | translate }}</h4>
+        <h4 class="market-cap-title"><ion-icon name="md-trending-up"></ion-icon> {{ 'MPHANTOMETS_PAGE.MPHANTOMET_DATA' | translate }}</h4>
         <ion-grid class="no-padding" class="price-container">
           <ion-row nowrap align-items-baseline>
             <ion-col col-auto *ngIf="fiatCurrency?.code !== 'btc'" style="padding-right: 20px">
@@ -54,7 +54,7 @@
             </ion-col>
             <ion-col col-auto>
               <p>
-                {{ btcCurrency?.code | uppercase }} ({{ 'MARKETS_PAGE.PERCENTAGE_CHANGE' | translate }})
+                {{ btcCurrency?.code | uppercase }} ({{ 'MPHANTOMETS_PAGE.PERCENTAGE_CHANGE' | translate }})
                 <span class="btc-bullet"></span>
               </p>
               <h6>

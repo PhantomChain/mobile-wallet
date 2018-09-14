@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { ArkApiProvider } from '@providers/ark-api/ark-api';
+import { PhantomApiProvider } from '@providers/phantom-api/phantom-api';
 import { ModalController, NavController } from 'ionic-angular';
 import { Wallet, WalletKeys, Transaction, TranslatableObject } from '@models/model';
 import { TranslateService } from '@ngx-translate/core';
@@ -20,7 +20,7 @@ export class ConfirmTransactionComponent {
   @Output('onConfirm') onConfirm: EventEmitter<Transaction> = new EventEmitter();
 
   constructor(
-    private arkApiProvider: ArkApiProvider,
+    private phantomApiProvider: PhantomApiProvider,
     private modalCtrl: ModalController,
     private navCtrl: NavController,
     private translateService: TranslateService
@@ -29,7 +29,7 @@ export class ConfirmTransactionComponent {
   open(transaction: any, keys: WalletKeys, addressCheckResult?: AddressCheckResult) {
     transaction = new Transaction(this.wallet.address).deserialize(transaction);
 
-    this.arkApiProvider.createTransaction(transaction, keys.key, keys.secondKey, keys.secondPassphrase)
+    this.phantomApiProvider.createTransaction(transaction, keys.key, keys.secondKey, keys.secondPassphrase)
       .subscribe((tx) => {
         const modal = this.modalCtrl.create('ConfirmTransactionModal', {
           transaction: tx,

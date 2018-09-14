@@ -89,7 +89,7 @@ ion-app.transparent {
   transform: rotate(-30deg);
 }
 
-.dark-navbar {
+.dphantom-navbar {
   color: white;
 
   &.delegate > .toolbar-background {
@@ -141,7 +141,7 @@ ion-app.transparent {
   .item {
     padding: .5em 0;
     user-select: auto!important;
-    border-bottom: 1px solid darken(color($colors, primary-background, base), 5%)!important;
+    border-bottom: 1px solid dphantomen(color($colors, primary-background, base), 5%)!important;
 
     &:last-child {
       border-bottom: none!important;
@@ -235,7 +235,7 @@ ion-fab.pull-footer {
 }
 
 ion-app {
-  &.dark-theme {
+  &.dphantom-theme {
     .toggle-icon {
       background-color: #0d1632;
 
@@ -249,7 +249,7 @@ ion-app {
         background-color: #0d1632;
 
         .toggle-inner {
-          background-color: lighten(color($darkColors, primary-background, base), 50%);
+          background-color: lighten(color($dphantomColors, primary-background, base), 50%);
         }
       }
     }
@@ -264,11 +264,11 @@ ion-app {
 
     #sidebarMenu {
       ion-header p {
-        color: color($darkColors, secondary, base);
+        color: color($dphantomColors, secondary, base);
       }
 
       .menu-inner {
-        background-color: color($darkColors, primary-background, base);
+        background-color: color($dphantomColors, primary-background, base);
         color: #fff;
       }
 
@@ -285,7 +285,7 @@ ion-app {
     }
 
     ion-content {
-      background-color: color($darkColors, primary-background, base);
+      background-color: color($dphantomColors, primary-background, base);
     }
 
     .content {
@@ -296,7 +296,7 @@ ion-app {
       color: #fff;
 
       .label {
-        color: color($darkColors, secondary, base);
+        color: color($dphantomColors, secondary, base);
 
         h3, h6 {
           color: #fff;
@@ -316,19 +316,19 @@ ion-app {
       }
 
       p {
-        color: color($darkColors, secondary, base);
+        color: color($dphantomColors, secondary, base);
       }
     }
 
     .list-selectable {
       .item {
-        border-bottom: 1px solid color($darkColors, secondary-background, base)!important;
+        border-bottom: 1px solid color($dphantomColors, secondary-background, base)!important;
       }
     }
 
     form .item-block .item-inner,
     .list .item-block .item-inner {
-      border-bottom: 1px solid color($darkColors, secondary-background, base);
+      border-bottom: 1px solid color($dphantomColors, secondary-background, base);
     }
 
     .list .item-block {
@@ -345,8 +345,8 @@ ion-app {
     }
 
     ion-item-divider {
-      background-color: color($darkColors, primary-background, base);
-      border-bottom-color: color($darkColors, primary-background, base);
+      background-color: color($dphantomColors, primary-background, base);
+      border-bottom-color: color($dphantomColors, primary-background, base);
     }
 
     ion-list[no-lines] .item-block,
@@ -363,23 +363,23 @@ ion-app {
     }
     
     .bar-button-default {
-      color: lighten(color($darkColors, primary-background, base), 50%);
+      color: lighten(color($dphantomColors, primary-background, base), 50%);
     }
 
     .bar-button-clear {
       color: #fff !important;
     }
 
-    .dark-navbar {
+    .dphantom-navbar {
       button {
         .icon {
-          color: lighten(color($darkColors, primary-background, base), 50%);
+          color: lighten(color($dphantomColors, primary-background, base), 50%);
         }
       }
     }
 
     .action-sheet-group {
-      background-color: color($darkColors, primary-background, base);
+      background-color: color($dphantomColors, primary-background, base);
     }
 
     .action-sheet-button {
@@ -403,7 +403,7 @@ ion-app {
 
     ion-alert {
       .alert-wrapper {
-        background-color: color($darkColors, primary-background, base) !important;
+        background-color: color($dphantomColors, primary-background, base) !important;
         color: #fff;
 
         .alert-message {
@@ -411,14 +411,14 @@ ion-app {
         }
 
         .alert-radio-group {
-          border-color: color($darkColors, secondary-background, base);
+          border-color: color($dphantomColors, secondary-background, base);
 
           .alert-radio-label {
             color: #fff;
           }
 
           [aria-checked=true] .alert-radio-label {
-            color: color($darkColors, primary, base);
+            color: color($dphantomColors, primary, base);
           }
         }
       }
