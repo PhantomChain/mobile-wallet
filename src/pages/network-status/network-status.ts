@@ -6,9 +6,9 @@ import 'rxjs/add/operator/takeUntil';
 import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/debounceTime';
 
-import { PhantomApiProvider } from '@providers/phantom-api/phantom-api';
+import { ArkApiProvider } from '@providers/ark-api/ark-api';
 
-import { Network, Peer } from 'phantom-ts';
+import { Network, Peer } from 'ark-ts';
 
 import * as constants from '@app/app.constants';
 import { TranslateService } from '@ngx-translate/core';
@@ -30,13 +30,13 @@ export class NetworkStatusPage implements OnDestroy {
   private loader;
 
   constructor(
-    private phantomApiProvider: PhantomApiProvider,
+    private arkApiProvider: ArkApiProvider,
     private loadingCtrl: LoadingController,
     private zone: NgZone,
     private translateService: TranslateService,
     private toastProvider: ToastProvider,
   ) {
-    this.currentNetwork = this.phantomApiProvider.network;
+    this.currentNetwork = this.arkApiProvider.network;
     this.currentPeer = this.currentNetwork.activePeer;
   }
 
@@ -51,13 +51,13 @@ export class NetworkStatusPage implements OnDestroy {
         duration: 10000
       });
 
-      this.phantomApiProvider.findGoodPeer();
+      this.arkApiProvider.findGoodPeer();
       this.loader.present();
     });
   }
 
   private refreshData() {
-    this.phantomApiProvider.api.peer.get(this.currentPeer.ip, this.currentPeer.port)
+    this.arkApiProvider.api.peer.get(this.currentPeer.ip, this.currentPeer.port)
     .takeUntil(this.unsubscriber$)
     .do((response) => {
       if (response.success) {
@@ -68,7 +68,7 @@ export class NetworkStatusPage implements OnDestroy {
   }
 
   private onUpdatePeer() {
-    this.phantomApiProvider.onUpdatePeer$
+    this.arkApiProvider.onUpdatePeer$
       .takeUntil(this.unsubscriber$)
       .do((peer) => {
         if (this.loader) { this.loader.dismiss(); }

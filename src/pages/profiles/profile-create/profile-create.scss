@@ -25,10 +25,10 @@ page-profile-create {
     margin-top: 2em;
     padding-left: 0;
     padding-right: 2em;
-    color: color($colors, dphantom, base);
+    color: color($colors, dark, base);
 
     .toolbar-background {
-      background-color: dphantomen(color($colors, primary-background, base), 5%);
+      background-color: darken(color($colors, primary-background, base), 5%);
     }
 
     .toolbar-content {
@@ -49,13 +49,13 @@ page-profile-create {
   }
 }
 
-.dphantom-theme {
+.dark-theme {
   page-profile-create {
     .advanced-toolbar {
-      color: color($dphantomColors, dphantom, base);
+      color: color($darkColors, dark, base);
 
       .toolbar-background {
-        background-color: color($dphantomColors, secondary-background, base);
+        background-color: color($darkColors, secondary-background, base);
       }
     }
   }

@@ -43,7 +43,7 @@
     "NAME": "Naam",
     "NETHASH": "Nethash",
     "MANAGE_NETWORKS": "Aangepast Netwerken Beheren",
-    "MPHANTOMET_SYMBOL_NAME": "Mphantomt Symbool Naam (voor ophalen van prijzen in EUR, BTC, etc.)",
+    "MARKET_SYMBOL_NAME": "Markt Symbool Naam (voor ophalen van prijzen in EUR, BTC, etc.)",
     "OR_CREATE_NEW": "... of maak een nieuw aangepast netwerk",
     "SAVE_SUCCESSFUL": "Netwerk succesvol opgeslagen!",
     "SEED_SERVER": "Seed Server URL",
@@ -90,20 +90,20 @@
     "FAST_EASY": "Snel en Makkelijk",
     "GET_STARTED": "Aan de slag",
     "SECURITY": "Beveiliging",
-    "TEXT_1": "Wij leveren alle hulpmiddelen die je nodig hebt om je PHANTOM tokens te beheren, altijd, overal, wereldwijd!",
+    "TEXT_1": "Wij leveren alle hulpmiddelen die je nodig hebt om je ARK tokens te beheren, altijd, overal, wereldwijd!",
     "TEXT_2": "Alle gevoelige data is veilig opgeslagen met behulp van het PBKDF2 algoritme en AES-256 encryptie beschermd door je pincode",
     "TEXT_3": "Veeg tussen profielen en wallets, controleer je saldo, verzend en ontvang saldo en nog veel meer",
     "WELCOME": "Welkom aan boord"
   },
   "SIGN_IN_PAGE": {
-    "PHANTOM_WALLET": "PHANTOM Wallet",
+    "ARK_WALLET": "ARK Wallet",
     "CREATE_PROFILE": "Account aanmaken",
-    "SLOGAN": "Welkom bij het PHANTOM Ecosysteem"
+    "SLOGAN": "Welkom bij het ARK Ecosysteem"
   },
   "SIGN_OUT_PROFILE_TEXT": "Uitloggen bij profiel?",
-  "MPHANTOMETS_PAGE": {
-    "MPHANTOMET_CAP": "Market Cap.",
-    "MPHANTOMET_DATA": "Mphantomtdata",
+  "MARKETS_PAGE": {
+    "MARKET_CAP": "Market Cap.",
+    "MARKET_DATA": "Marktdata",
     "PERCENTAGE_CHANGE": "24u Verandering",
     "PRICE": "Prijs",
     "VOLUME": "Volume"
@@ -174,7 +174,7 @@
     "CLEAR_DATA": "Data verwijderen",
     "CLEAR_DATA_TEXT": "Al je data, inclusief aangemaakte profielen, wallets en contacten wordt verwijderd van de app en teruggezet naar de standaard instellingen.",
     "CURRENCY": "Valuta",
-    "DPHANTOM_MODE": "Nachtmodus",
+    "DARK_MODE": "Nachtmodus",
     "LANGUAGE": "Taal",
     "PRIVACY_POLICY": "Privacybeleid",
     "SECURITY": "Beveiliging",
@@ -243,7 +243,7 @@
     "ADD_WALLET_TEXT": "Klik op de knop onderin om een wallet te importeren of aan te maken",
     "ADDRESS": "Adres",
     "ALERT_SUCCESSFULLY_ENCRYPTED_SECOND_PASSPHRASE": "De tweede passphrase is succesvol versleuteld",
-    "BACKUP_ACCOUNT": "BELANGRIJK! Sla deze 'geheime passphrase' veilig op, zonder deze woorden kan je je wallet niet herstellen of transacties verzenden en ALLE PHANTOM TOKENS ZULLEN VERLOREN GAAN.",
+    "BACKUP_ACCOUNT": "BELANGRIJK! Sla deze 'geheime passphrase' veilig op, zonder deze woorden kan je je wallet niet herstellen of transacties verzenden en ALLE ARK TOKENS ZULLEN VERLOREN GAAN.",
     "BACKUP_PASSPHRASE": "Sla deze passphrase veilig op, zonder deze woorden kan je je wallet niet herstellen.",
     "BACKUP_SECOND_PASSPHRASE": "Sla deze tweede passphrase veilig op, zonder deze woorden kan je je saldo niet verplaatsen.",
     "BACKUP_SECOND_PASSPHRASE_SECURELY_RETYPE_TEXT": "Je kunt je wachtwoord naar jouw keuze aanpassen. Vergeet hem niet veilig op te slaan, je zal hem opnieuw moeten typen ter bevestiging.",

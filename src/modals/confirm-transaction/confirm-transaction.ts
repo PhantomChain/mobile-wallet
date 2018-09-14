@@ -4,12 +4,12 @@ import { IonicPage, NavController, NavParams, ViewController, LoadingController 
 import { Subject } from 'rxjs/Subject';
 import 'rxjs/add/operator/takeUntil';
 
-import { PhantomApiProvider } from '@providers/phantom-api/phantom-api';
+import { ArkApiProvider } from '@providers/ark-api/ark-api';
 import { MarketDataProvider } from '@providers/market-data/market-data';
 import { SettingsDataProvider } from '@providers/settings-data/settings-data';
 import { Transaction, MarketTicker, MarketCurrency } from '@models/model';
 
-import { Network } from 'phantom-ts/model';
+import { Network } from 'ark-ts/model';
 
 import lodash from 'lodash';
 import { AddressCheckResult} from '@providers/address-checker/address-check-result';
@@ -38,7 +38,7 @@ export class ConfirmTransactionModal implements OnDestroy {
     public navCtrl: NavController,
     public navParams: NavParams,
     private viewCtrl: ViewController,
-    private phantomApiProvider: PhantomApiProvider,
+    private arkApiProvider: ArkApiProvider,
     private marketDataProvider: MarketDataProvider,
     private settingsDataProvider: SettingsDataProvider,
     private loadingCtrl: LoadingController,
@@ -50,7 +50,7 @@ export class ConfirmTransactionModal implements OnDestroy {
     if (!this.transaction) { this.navCtrl.pop(); }
     this.loadingCtrl.create().dismissAll();
 
-    this.currentNetwork = this.phantomApiProvider.network;
+    this.currentNetwork = this.arkApiProvider.network;
   }
 
   broadcast() {
@@ -61,7 +61,7 @@ export class ConfirmTransactionModal implements OnDestroy {
     }
 
     this.hasBroadcast = true;
-    this.phantomApiProvider.postTransaction(this.transaction)
+    this.arkApiProvider.postTransaction(this.transaction)
       .subscribe(() => {
         this.dismiss(true);
       }, (error) => {

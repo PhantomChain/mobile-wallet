@@ -31,7 +31,7 @@ address-list {
       text-transform: uppercase;
       text-align: center;
       color: white;
-      background: dphantomen(color($colors, primary-background, base), 15%);
+      background: darken(color($colors, primary-background, base), 15%);
       height: 45px;
       width: 45px;
       line-height: 45px;
@@ -48,18 +48,18 @@ address-list {
       padding: 10px !important;
 
       .icon {
-        color: color($colors, dphantom, base);
+        color: color($colors, dark, base);
         -webkit-text-stroke: transparent;
       }
     }
   }
 }
 
-.dphantom-theme {
+.dark-theme {
   address-list {
     .address-item {
       button.more .icon {
-        color: lighten(color($dphantomColors, primary-background, base), 50%);
+        color: lighten(color($darkColors, primary-background, base), 50%);
       }
     }
   }

@@ -1,5 +1,5 @@
-import { Transaction as TransactionModel, TransactionType } from 'phantom-ts/model';
-import phantomConfig from 'phantom-ts/config';
+import { Transaction as TransactionModel, TransactionType } from 'ark-ts/model';
+import arkConfig from 'ark-ts/config';
 
 import { MarketCurrency, MarketHistory, MarketTicker } from '@models/market';
 
@@ -75,7 +75,7 @@ export class Transaction extends TransactionModel {
   }
 
   getTimestamp() {
-    const blockchainDate = phantomConfig.blockchain.date;
+    const blockchainDate = arkConfig.blockchain.date;
     const blockchainTime = blockchainDate.getTime() / 1000;
 
     return this.timestamp + blockchainTime;
@@ -108,7 +108,7 @@ export class Transaction extends TransactionModel {
   }
 
   isTransfer(): boolean {
-    return this.type === TransactionType.SendPhantom;
+    return this.type === TransactionType.SendArk;
   }
 
   isSender(): boolean {

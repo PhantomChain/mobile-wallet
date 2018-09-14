@@ -1,8 +1,8 @@
 import { ModalController, NavController, NavParams } from 'ionic-angular';
 import { UserDataProvider } from '@providers/user-data/user-data';
-import { PhantomApiProvider } from '@providers/phantom-api/phantom-api';
+import { ArkApiProvider } from '@providers/ark-api/ark-api';
 import { ToastProvider } from '@providers/toast/toast';
-import { PrivateKey, PublicKey } from 'phantom-ts';
+import { PrivateKey, PublicKey } from 'ark-ts';
 import { Wallet } from '@models/model';
 import { NetworkProvider } from '@providers/network/network';
 import { SettingsDataProvider } from '@providers/settings-data/settings-data';
@@ -17,7 +17,7 @@ export abstract class BaseWalletImport {
     navParams: NavParams,
     protected navCtrl: NavController,
     private userDataProvider: UserDataProvider,
-    private phantomApiProvider: PhantomApiProvider,
+    private arkApiProvider: ArkApiProvider,
     protected toastProvider: ToastProvider,
     private modalCtrl: ModalController,
     private networkProvider: NetworkProvider,
@@ -59,7 +59,7 @@ export abstract class BaseWalletImport {
 
     let newWallet = new Wallet(!privateKey);
 
-    this.phantomApiProvider.api.account
+    this.arkApiProvider.api.account
       .get({ address })
       .finally(() => {
         if (!privateKey) {

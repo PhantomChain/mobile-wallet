@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 
-import { PhantomApiProvider } from '@providers/phantom-api/phantom-api';
+import { ArkApiProvider } from '@providers/ark-api/ark-api';
 
 import bip39 from 'bip39';
-import { Fees, Network } from 'phantom-ts';
+import { Fees, Network } from 'ark-ts';
 
 @IonicPage()
 @Component({
@@ -25,7 +25,7 @@ export class RegisterSecondPassphrasePage {
     public navCtrl: NavController,
     public navParams: NavParams,
     private viewCtrl: ViewController,
-    private phantomApiProvider: PhantomApiProvider,
+    private arkApiProvider: ArkApiProvider,
   ) {
   }
 
@@ -54,8 +54,8 @@ export class RegisterSecondPassphrasePage {
 
   ionViewDidLoad() {
     this.passphrase = bip39.generateMnemonic();
-    this.currentNetwork = this.phantomApiProvider.network;
-    this.phantomApiProvider.fees.subscribe((fees) => this.fees = fees);
+    this.currentNetwork = this.arkApiProvider.network;
+    this.arkApiProvider.fees.subscribe((fees) => this.fees = fees);
   }
 
 }

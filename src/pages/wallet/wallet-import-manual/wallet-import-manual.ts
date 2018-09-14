@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angu
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 import { UserDataProvider } from '@providers/user-data/user-data';
-import { PhantomApiProvider } from '@providers/phantom-api/phantom-api';
+import { ArkApiProvider } from '@providers/ark-api/ark-api';
 import { ToastProvider } from '@providers/toast/toast';
 
 import { NetworkProvider } from '@providers/network/network';
@@ -43,7 +43,7 @@ export class WalletManualImportPage extends BaseWalletImport  {
     navParams: NavParams,
     navCtrl: NavController,
     userDataProvider: UserDataProvider,
-    phantomApiProvider: PhantomApiProvider,
+    arkApiProvider: ArkApiProvider,
     toastProvider: ToastProvider,
     modalCtrl: ModalController,
     networkProvider: NetworkProvider,
@@ -51,7 +51,7 @@ export class WalletManualImportPage extends BaseWalletImport  {
     private formBuilder: FormBuilder,
     private addressValidator: AddressValidator,
     settingsDataProvider: SettingsDataProvider) {
-    super(navParams, navCtrl, userDataProvider, phantomApiProvider, toastProvider, modalCtrl, networkProvider, settingsDataProvider);
+    super(navParams, navCtrl, userDataProvider, arkApiProvider, toastProvider, modalCtrl, networkProvider, settingsDataProvider);
     this.useAddress = navParams.get('type') === 'address';
     this.nonBIP39Passphrase = false;
 

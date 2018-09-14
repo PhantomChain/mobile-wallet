@@ -1,7 +1,7 @@
 import { UserDataProvider } from '@providers/user-data/user-data';
 import { Injectable } from '@angular/core';
-import { PublicKey } from 'phantom-ts/core';
-import { Network } from 'phantom-ts';
+import { PublicKey } from 'ark-ts/core';
+import { Network } from 'ark-ts';
 import { isNil } from 'lodash';
 
 @Injectable()
