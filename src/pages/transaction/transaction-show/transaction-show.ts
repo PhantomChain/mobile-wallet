@@ -5,7 +5,7 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { Transaction } from '@models/transaction';
 import { UserDataProvider } from '@providers/user-data/user-data';
 import { ContactsProvider } from '@providers/contacts/contacts';
-import { Network } from 'ark-ts/model';
+import { Network } from 'phantom-ts/model';
 import { TranslateService } from '@ngx-translate/core';
 import { TruncateMiddlePipe } from '@pipes/truncate-middle/truncate-middle';
 import { Wallet } from '@models/model';

@@ -11,10 +11,10 @@ import { Contact, Profile, Wallet, WalletKeys } from '@models/model';
 
 import lodash from 'lodash';
 import { v4 as uuid } from 'uuid';
-import { Network, NetworkType } from 'ark-ts/model';
+import { Network, NetworkType } from 'phantom-ts/model';
 
 import * as constants from '@app/app.constants';
-import { Delegate } from 'ark-ts';
+import { Delegate } from 'phantom-ts';
 import { TranslatableObject } from '@models/translate';
 import { StoredNetwork } from '@models/stored-network';
 
@@ -290,7 +290,7 @@ export class UserDataProvider {
   loadNetworks() {
 
     return Observable.create((observer) => {
-      // Return defaults networks from arkts
+      // Return defaults networks from phantomts
       this.storageProvider.getObject(constants.STORAGE_NETWORKS).subscribe((networks) => {
         if (!networks || lodash.isEmpty(networks)) {
           const uniqueDefaults = {};

@@ -43,7 +43,7 @@
       "NAME": "Nome",
       "NETHASH": "Nethash",
       "MANAGE_NETWORKS": "Gestisci reti personalizzate",
-      "MARKET_SYMBOL_NAME": "Nome o simbolo di mercato (per recuperare i prezzi in EUR, BTC, ecc.)",
+      "MPHANTOMET_SYMBOL_NAME": "Nome o simbolo di mercato (per recuperare i prezzi in EUR, BTC, ecc.)",
       "NO_NETWORK_CONFIGURED": "Non è stata ancora configurata nessuna rete personalizzata. Premi il pulsante qui sotto per crearne una.",
       "OR_CREATE_NEW": "... oppure crea una nuova rete personalizzata",
       "SAVE_SUCCESSFUL": "Rete salvata correttamente!",
@@ -92,20 +92,20 @@
       "FAST_EASY": "Veloce e facile",
       "GET_STARTED": "Iniziamo",
       "SECURITY": "Sicurezza",
-      "TEXT_1": "Forniamo tutti gli strumenti necessari per gestire i token ARK, sempre e ovunque, in tutto il mondo!",
+      "TEXT_1": "Forniamo tutti gli strumenti necessari per gestire i token PHANTOM, sempre e ovunque, in tutto il mondo!",
       "TEXT_2": "Tutti i tuoi dati sensibili sono archiviati in modo sicuro utilizzando l'algoritmo PBKDF2 e la crittografia AES-256 protetta dal tuo codice PIN",
       "TEXT_3": "Scorri tra i profili e i portafogli, controlla i tuoi saldi, invia e ricevi fondi e molto altro ancora",
       "WELCOME": "Benvenuto a bordo"
     },
     "SIGN_IN_PAGE": {
-      "ARK_WALLET": "Portafoglio ARK",
+      "PHANTOM_WALLET": "Portafoglio PHANTOM",
       "CREATE_PROFILE": "Crea un profilo",
-      "SLOGAN": "Benvenuto nell'ecosistema ARK"
+      "SLOGAN": "Benvenuto nell'ecosistema PHANTOM"
     },
     "SIGN_OUT_PROFILE_TEXT": "Uscire dal profilo?",
-    "MARKETS_PAGE": {
-      "MARKET_CAP": "Cap. di mercato",
-      "MARKET_DATA": "Dati di mercato",
+    "MPHANTOMETS_PAGE": {
+      "MPHANTOMET_CAP": "Cap. di mercato",
+      "MPHANTOMET_DATA": "Dati di mercato",
       "PERCENTAGE_CHANGE": "Variazione nelle 24h",
       "PRICE": "Prezzo",
       "VOLUME": "Volume"
@@ -177,7 +177,7 @@
       "CLEAR_DATA": "Elimina dati",
       "CLEAR_DATA_TEXT": "Tutti i tuoi dati, inclusi i profili, i portafogli e i contatti creati verranno rimossi dall'applicazione e ripristinati ai valori predefiniti",
       "CURRENCY": "Valuta",
-      "DARK_MODE": "Modalità notte",
+      "DPHANTOM_MODE": "Modalità notte",
       "LANGUAGE": "Lingua",
       "PRIVACY_POLICY": "Politiche sulla privacy",
       "SECURITY": "Sicurezza",
@@ -247,7 +247,7 @@
       "ADD_WALLET_TEXT": "Per importare o creare un portafoglio premi sul pulsante qui sotto",
       "ADDRESS": "Indirizzo",
       "ALERT_SUCCESSFULLY_ENCRYPTED_SECOND_PASSPHRASE": "La seconda frase segreta è stata cifrata con successo",
-      "BACKUP_ACCOUNT": "IMPORTANTE! Salva questa frase segreta in un posto sicuro: senza queste parole non potrai ripristinare il tuo portafoglio o inviare transazioni e TUTTI I TUOI ARK ANDRANNO PERSI.",
+      "BACKUP_ACCOUNT": "IMPORTANTE! Salva questa frase segreta in un posto sicuro: senza queste parole non potrai ripristinare il tuo portafoglio o inviare transazioni e TUTTI I TUOI PHANTOM ANDRANNO PERSI.",
       "BACKUP_PASSPHRASE": "Salva questa frase segreta in un posto sicuro: senza queste parole non potrai ripristinare il tuo portafoglio.",
       "BACKUP_SECOND_PASSPHRASE": "Salva questa seconda frase segreta in un posto sicuro: senza queste parole non potrai spostare i tuoi fondi.",
       "BACKUP_SECOND_PASSPHRASE_SECURELY_RETYPE_TEXT": "Puoi modificare una password a tua scelta. Ricordati di salvarla in un posto sicuro: sarà necessario digitarla nuovamente per la convalida.",

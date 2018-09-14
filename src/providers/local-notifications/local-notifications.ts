@@ -9,7 +9,7 @@ import { ContactsProvider } from '@providers/contacts/contacts';
 import { UserSettings, Wallet, Transaction } from '@models/model';
 import { TranslateService } from '@ngx-translate/core';
 
-import * as arkts from 'ark-ts';
+import * as phantomts from 'phantom-ts';
 import lodash from 'lodash';
 import stringHash from 'string-hash';
 
@@ -72,11 +72,11 @@ export class LocalNotificationsProvider {
     for (const address in wallets) {
       const wallet = wallets[address];
       // Convert object to class
-      const network = new arkts.Network();
+      const network = new phantomts.Network();
       Object.assign(network, wallet.network);
 
       // Request list of transactions in the specific network
-      const client = new arkts.Client(network);
+      const client = new phantomts.Client(network);
       client.transaction.list({ senderId: address, recipientId: address })
         .subscribe(response => {
           if (!response.success) {

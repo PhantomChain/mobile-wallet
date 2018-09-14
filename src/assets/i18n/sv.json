@@ -57,20 +57,20 @@
     "FAST_EASY": "Snabb och Enkel",
     "GET_STARTED": "Kom igång",
     "SECURITY": "Säkerhet",
-    "TEXT_1": "Vi förser dig med alla verktyg du behöver för att hantera dina ARK-tokens, när som helst, överallt, i hela världen!",
+    "TEXT_1": "Vi förser dig med alla verktyg du behöver för att hantera dina PHANTOM-tokens, när som helst, överallt, i hela världen!",
     "TEXT_2": "All din känsliga data är säkert lagrad med PBKDF2-algoritmen och krypterad med AES-256 som beskyddas av din PIN-kod",
     "TEXT_3": "Svep mellan profiler och plånböcker, kolla dina saldon, skicka och ta emot tillgångar och mycket mera",
     "WELCOME": "Välkommen ombord"
   },
   "SIGN_IN_PAGE": {
-    "ARK_WALLET": "ARK Plånbok",
+    "PHANTOM_WALLET": "PHANTOM Plånbok",
     "CREATE_PROFILE": "Skapa en profil",
-    "SLOGAN": "Välkommen till ARK-Ekosystemet"
+    "SLOGAN": "Välkommen till PHANTOM-Ekosystemet"
   },
   "SIGN_OUT_PROFILE_TEXT": "Logga ut från Profilen?",
-  "MARKETS_PAGE": {
-    "MARKET_CAP": "Börsvärde",
-    "MARKET_DATA": "Marknadsdata",
+  "MPHANTOMETS_PAGE": {
+    "MPHANTOMET_CAP": "Börsvärde",
+    "MPHANTOMET_DATA": "Mphantomnadsdata",
     "PERCENTAGE_CHANGE": "24h Ändring",
     "PRICE": "Pris",
     "VOLUME": "Volym"
@@ -135,7 +135,7 @@
     "CLEAR_DATA": "Rensa Data",
     "CLEAR_DATA_TEXT": "All din data, inklusive skapade profiler, plånböcker och Kontakter kommer att tas bort från appen och nollställas.",
     "CURRENCY": "Valuta",
-    "DARK_MODE": "Mörkt Läge",
+    "DPHANTOM_MODE": "Mörkt Läge",
     "LANGUAGE": "Språk",
     "PRIVACY_POLICY": "Integritetspolicy",
     "SECURITY": "Säkerhet",

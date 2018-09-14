@@ -45,7 +45,7 @@
     "NAME": "Name",
     "NETHASH": "Nethash",
     "MANAGE_NETWORKS": "Manage Custom Networks",
-    "MARKET_SYMBOL_NAME": "Market Symbol Name (for getting prices in USD, BTC, etc.)",
+    "MPHANTOMET_SYMBOL_NAME": "Market Symbol Name (for getting prices in USD, BTC, etc.)",
     "NO_NETWORK_CONFIGURED": "No custom network has been configured yet. Click on the button below to create one.",
     "OR_CREATE_NEW": "... or create a new custom network",
     "SAVE_SUCCESSFUL": "Successfully saved network!",
@@ -94,20 +94,20 @@
     "FAST_EASY": "Fast and Easy",
     "GET_STARTED": "Get Started",
     "SECURITY": "Security",
-    "TEXT_1": "We provide all the tools you need to manage your ARK tokens, anytime, anywhere, worldwide!",
+    "TEXT_1": "We provide all the tools you need to manage your PHANTOM tokens, anytime, anywhere, worldwide!",
     "TEXT_2": "All your sensitive data is securely stored using PBKDF2 algorithm and AES-256 encryption protected by your PIN Code",
     "TEXT_3": "Swipe between profiles and wallets, check your balances, send and receive funds and much more",
     "WELCOME": "Welcome Aboard"
   },
   "SIGN_IN_PAGE": {
-    "ARK_WALLET": "ARK Wallet",
+    "PHANTOM_WALLET": "PHANTOM Wallet",
     "CREATE_PROFILE": "Create a profile",
-    "SLOGAN": "Welcome to the ARK Ecosystem"
+    "SLOGAN": "Welcome to the PHANTOM Ecosystem"
   },
   "SIGN_OUT_PROFILE_TEXT": "Sign out of Profile?",
-  "MARKETS_PAGE": {
-    "MARKET_CAP": "Market Cap.",
-    "MARKET_DATA": "Market Data",
+  "MPHANTOMETS_PAGE": {
+    "MPHANTOMET_CAP": "Market Cap.",
+    "MPHANTOMET_DATA": "Market Data",
     "PERCENTAGE_CHANGE": "24h Change",
     "PRICE": "Price",
     "VOLUME": "Volume"
@@ -179,7 +179,7 @@
     "CLEAR_DATA": "Clear Data",
     "CLEAR_DATA_TEXT": "All your data, including created profiles, wallets and contacts will be removed from the app and reset to default.",
     "CURRENCY": "Currency",
-    "DARK_MODE": "Dark Mode",
+    "DPHANTOM_MODE": "Dphantom Mode",
     "LANGUAGE": "Language",
     "PRIVACY_POLICY": "Privacy Policy",
     "SECURITY": "Security",
@@ -249,7 +249,7 @@
     "ADD_WALLET_TEXT": "To import or create wallet click on the button below",
     "ADDRESS": "Address",
     "ALERT_SUCCESSFULLY_ENCRYPTED_SECOND_PASSPHRASE": "The second passphrase was successfully encrypted",
-    "BACKUP_ACCOUNT": "IMPORTANT! Backup this 'secret passphrase' securely, without these words you can not restore your wallet or send transactions and ALL ARK TOKENS WILL BE LOST.",
+    "BACKUP_ACCOUNT": "IMPORTANT! Backup this 'secret passphrase' securely, without these words you can not restore your wallet or send transactions and ALL PHANTOM TOKENS WILL BE LOST.",
     "BACKUP_PASSPHRASE": "Backup this passphrase securely, without these words you can not restore your wallet.",
     "BACKUP_SECOND_PASSPHRASE": "Backup this second passphrase securely, without these words you can not move your funds.",
     "BACKUP_SECOND_PASSPHRASE_SECURELY_RETYPE_TEXT": "You can edit for a password of your choice. Remember to backup safely, you will need to re-type for validation.",

@@ -57,20 +57,20 @@
       "FAST_EASY": "Rápido e Fácil",
       "GET_STARTED": "Iniciar",
       "SECURITY": "Segurança",
-      "TEXT_1": "Nós fornecemos todas as ferramentas que você precisa para gerenciar suas ARK, a qualquer hora, em qualquer lugar, em todo o mundo!",
+      "TEXT_1": "Nós fornecemos todas as ferramentas que você precisa para gerenciar suas PHANTOM, a qualquer hora, em qualquer lugar, em todo o mundo!",
       "TEXT_2": "Todos os seus dados confidenciais são armazenados de forma segura usando o algoritmo PBKDF2 e a criptografia AES-256 protegida pelo seu código PIN",
       "TEXT_3": "Deslize entre perfis e carteiras, verifique seus saldos, envie e receba fundos e muito mais",
       "WELCOME": "Bem vindo a bordo"
     },
     "SIGN_IN_PAGE": {
-      "ARK_WALLET": "Carteira ARK",
+      "PHANTOM_WALLET": "Carteira PHANTOM",
       "CREATE_PROFILE": "Criar um perfil",
-      "SLOGAN": "Bem vindo ao Ecossistema ARK"
+      "SLOGAN": "Bem vindo ao Ecossistema PHANTOM"
     },
     "SIGN_OUT_PROFILE_TEXT": "Sair do perfil?",
-    "MARKETS_PAGE": {
-      "MARKET_CAP": "Valor de Mercado",
-      "MARKET_DATA": "Dados de Mercado",
+    "MPHANTOMETS_PAGE": {
+      "MPHANTOMET_CAP": "Valor de Mercado",
+      "MPHANTOMET_DATA": "Dados de Mercado",
       "PERCENTAGE_CHANGE": "Movimento 24h",
       "PRICE": "Preço",
       "VOLUME": "Volume"
@@ -135,7 +135,7 @@
       "CLEAR_DATA": "Apagar dados",
       "CLEAR_DATA_TEXT": "Todos os seus dados, incluindo perfis criados, carteiras e contatos serão removidos do aplicativo e serão redefinidos para o padrão.",
       "CURRENCY": "Moeda",
-      "DARK_MODE": "Modo Noturno",
+      "DPHANTOM_MODE": "Modo Noturno",
       "LANGUAGE": "Idioma",
       "PRIVACY_POLICY": "Políticas de Privacidade",
       "SECURITY": "Segurança",
@@ -192,7 +192,7 @@
       "ADD_WALLET_TEXT": "Para importar ou criar uma carteira clique no botão abaixo",
       "ADDRESS": "Endereço",
       "ALERT_SUCCESSFULLY_ENCRYPTED_SECOND_PASSPHRASE": "A frase secreta secundária foi encriptada com sucesso",
-      "BACKUP_ACCOUNT": "IMPORTANTE! Faça o backup desta 'frase secreta' de forma segura, sem essas palavras você não pode restaurar sua carteira ou enviar transações e TODOS OS TOKENS ARK SERÃO PERDIDOS",
+      "BACKUP_ACCOUNT": "IMPORTANTE! Faça o backup desta 'frase secreta' de forma segura, sem essas palavras você não pode restaurar sua carteira ou enviar transações e TODOS OS TOKENS PHANTOM SERÃO PERDIDOS",
       "BACKUP_PASSPHRASE": "Faça backup da frase secreta de forma segura, sem essas palavras você não conseguirá restaurar sua carteira.",
       "BACKUP_SECOND_PASSPHRASE": "Faça backup da frase secreta secundária de forma segura, sem essas palavras você não conseguirá mover seus fundos.",
       "BACKUP_SECOND_PASSPHRASE_SECURELY_RETYPE_TEXT": "Você pode editar para uma frase secreta de sua escolha. Lembre-se de fazer backup com segurança, você precisará re-digitar para validação.",

@@ -10,28 +10,28 @@ import { ToastProvider } from '@providers/toast/toast';
 
 import { Transaction, TranslatableObject } from '@models/model';
 
-import * as arkts from 'ark-ts';
+import * as phantomts from 'phantom-ts';
 import lodash from 'lodash';
 import * as constants from '@app/app.constants';
-import arktsConfig from 'ark-ts/config';
-import { ArkUtility } from '../../utils/ark-utility';
-import { Delegate } from 'ark-ts';
+import phantomtsConfig from 'phantom-ts/config';
+import { PhantomUtility } from '../../utils/phantom-utility';
+import { Delegate } from 'phantom-ts';
 import { StoredNetwork } from '@models/stored-network';
 
 @Injectable()
-export class ArkApiProvider {
+export class PhantomApiProvider {
 
-  public onUpdatePeer$: Subject<arkts.Peer> = new Subject<arkts.Peer>();
-  public onUpdateDelegates$: Subject<arkts.Delegate[]> = new Subject<arkts.Delegate[]>();
-  public onSendTransaction$: Subject<arkts.Transaction> = new Subject<arkts.Transaction>();
+  public onUpdatePeer$: Subject<phantomts.Peer> = new Subject<phantomts.Peer>();
+  public onUpdateDelegates$: Subject<phantomts.Delegate[]> = new Subject<phantomts.Delegate[]>();
+  public onSendTransaction$: Subject<phantomts.Transaction> = new Subject<phantomts.Transaction>();
 
   private _network: StoredNetwork;
-  private _api: arkts.Client;
+  private _api: phantomts.Client;
 
-  private _fees: arkts.Fees;
-  private _delegates: arkts.Delegate[];
+  private _fees: phantomts.Fees;
+  private _delegates: phantomts.Delegate[];
 
-  public arkjs = require('arkjs');
+  public phantomjscore = require('phantomjscore');
 
   constructor(
     private userDataProvider: UserDataProvider,
@@ -61,7 +61,7 @@ export class ArkApiProvider {
     return this.fetchFees();
   }
 
-  public get delegates(): Observable<arkts.Delegate[]> {
+  public get delegates(): Observable<phantomts.Delegate[]> {
     if (!lodash.isEmpty(this._delegates)) { return Observable.of(this._delegates); }
 
     return this.fetchDelegates(constants.NUM_ACTIVE_DELEGATES * 2);
@@ -71,9 +71,9 @@ export class ArkApiProvider {
     // set default peer
     if (network.type !== null) {
       const activePeer = network.activePeer;
-      const apiNetwork = arkts.Network.getDefault(network.type);
+      const apiNetwork = phantomts.Network.getDefault(network.type);
       if (apiNetwork) {
-        network = Object.assign<StoredNetwork, arkts.Network>(network, apiNetwork);
+        network = Object.assign<StoredNetwork, phantomts.Network>(network, apiNetwork);
       }
       if (activePeer) {
         network.activePeer = activePeer;
@@ -81,9 +81,9 @@ export class ArkApiProvider {
     }
 
     this._network = network;
-    this.arkjs.crypto.setNetworkVersion(this._network.version);
+    this.phantomjscore.crypto.setNetworkVersion(this._network.version);
 
-    this._api = new arkts.Client(this._network);
+    this._api = new phantomts.Client(this._network);
     this.findGoodPeer();
   }
 
@@ -104,14 +104,14 @@ export class ArkApiProvider {
       return;
     }
 
-    // try get a peer from the hardcoded ark-ts peerlist (only works for main and devnet)
-    arkts.PeerApi
+    // try get a peer from the hardcoded phantom-ts peerlist (only works for main and devnet)
+    phantomts.PeerApi
       .findGoodPeer(this._network)
       .subscribe((peer) => this.updateNetwork(peer),
         () => this.toastProvider.error('API.PEER_LIST_ERROR'));
   }
 
-  private async findGoodPeerFromList(peerList: arkts.Peer[]) {
+  private async findGoodPeerFromList(peerList: phantomts.Peer[]) {
     if (!peerList || !peerList.length) {
       return false;
     }
@@ -150,7 +150,7 @@ export class ArkApiProvider {
       const peerConfigResponses = await Promise.all(configChecks.map(p => p.catch(e => e)));
       for (const peerId in peerConfigResponses) {
         const config = peerConfigResponses[peerId];
-        const apiConfig = lodash.get(config, 'data.plugins["@arkecosystem/core-api"]');
+        const apiConfig = lodash.get(config, 'data.plugins["@phantomecosystem/core-api"]');
         if (apiConfig && apiConfig.enabled && apiConfig.port) {
           const peer = preFilteredPeers[peerId];
           peer.port = apiConfig.port;
@@ -194,7 +194,7 @@ export class ArkApiProvider {
     return true;
   }
 
-  public fetchDelegates(numberDelegatesToGet: number, getAllDelegates = false): Observable<arkts.Delegate[]> {
+  public fetchDelegates(numberDelegatesToGet: number, getAllDelegates = false): Observable<phantomts.Delegate[]> {
     if (!this._api) { return; }
     const limit = 51;
 
@@ -204,7 +204,7 @@ export class ArkApiProvider {
 
     let totalPages = totalCount / limit;
 
-    let delegates: arkts.Delegate[] = [];
+    let delegates: phantomts.Delegate[] = [];
 
     return Observable.create((observer) => {
 
@@ -231,7 +231,7 @@ export class ArkApiProvider {
 
   public createTransaction(transaction: Transaction, key: string, secondKey: string, secondPassphrase: string): Observable<Transaction> {
     return Observable.create((observer) => {
-      const configNetwork = arktsConfig.networks[this._network.name];
+      const configNetwork = phantomtsConfig.networks[this._network.name];
       let jsNetwork;
       if (configNetwork) {
         jsNetwork = {
@@ -242,7 +242,7 @@ export class ArkApiProvider {
         };
       }
 
-      if (!arkts.PublicKey.validateAddress(transaction.address, this._network)) {
+      if (!phantomts.PublicKey.validateAddress(transaction.address, this._network)) {
         observer.error({
           key: 'API.DESTINATION_ADDRESS_ERROR',
           parameters: {address: transaction.address}
@@ -261,10 +261,10 @@ export class ArkApiProvider {
           key: 'API.BALANCE_TOO_LOW_DETAIL',
           parameters: {
             token: this._network.token,
-            fee: ArkUtility.arktoshiToArk(transaction.fee),
-            amount: ArkUtility.arktoshiToArk(transaction.amount),
-            totalAmount: ArkUtility.arktoshiToArk(totalAmount),
-            balance: ArkUtility.arktoshiToArk(balance)
+            fee: PhantomUtility.phantomtoshiToPhantom(transaction.fee),
+            amount: PhantomUtility.phantomtoshiToPhantom(transaction.amount),
+            totalAmount: PhantomUtility.phantomtoshiToPhantom(totalAmount),
+            balance: PhantomUtility.phantomtoshiToPhantom(balance)
           }
         } as TranslatableObject);
         return observer.complete();
@@ -274,26 +274,26 @@ export class ArkApiProvider {
       transaction.signSignature = null;
       transaction.id = null;
 
-      const keys = this.arkjs.crypto.getKeys(key, jsNetwork);
-      this.arkjs.crypto.sign(transaction, keys);
+      const keys = this.phantomjscore.crypto.getKeys(key, jsNetwork);
+      this.phantomjscore.crypto.sign(transaction, keys);
 
       secondPassphrase = secondKey || secondPassphrase;
 
       if (secondPassphrase) {
-        const secondKeys = this.arkjs.crypto.getKeys(secondPassphrase, jsNetwork);
-        this.arkjs.crypto.secondSign(transaction, secondKeys);
+        const secondKeys = this.phantomjscore.crypto.getKeys(secondPassphrase, jsNetwork);
+        this.phantomjscore.crypto.secondSign(transaction, secondKeys);
       }
 
-      transaction.id = this.arkjs.crypto.getId(transaction);
+      transaction.id = this.phantomjscore.crypto.getId(transaction);
 
       observer.next(transaction);
       observer.complete();
     });
   }
 
-  public postTransaction(transaction: arkts.Transaction, peer: arkts.Peer = this._network.activePeer, broadcast: boolean = true) {
+  public postTransaction(transaction: phantomts.Transaction, peer: phantomts.Peer = this._network.activePeer, broadcast: boolean = true) {
     return Observable.create((observer) => {
-      this._api.transaction.post(transaction, peer).subscribe((result: arkts.TransactionPostResponse) => {
+      this._api.transaction.post(transaction, peer).subscribe((result: phantomts.TransactionPostResponse) => {
         if (result.transactionIds && result.transactionIds.indexOf(transaction.id) !== -1) {
           this.onSendTransaction$.next(transaction);
           if (broadcast) {
@@ -322,7 +322,7 @@ export class ArkApiProvider {
                .map(response => response && response.success ? response.delegate : null);
   }
 
-  private broadcastTransaction(transaction: arkts.Transaction) {
+  private broadcastTransaction(transaction: phantomts.Transaction) {
     if (!this._network.peerList || !this._network.peerList.length) {
       return;
     }
@@ -335,14 +335,14 @@ export class ArkApiProvider {
     }
   }
 
-  private updateNetwork(peer?: arkts.Peer): void {
+  private updateNetwork(peer?: phantomts.Peer): void {
     if (peer) {
       this._network.setPeer(peer);
       this.onUpdatePeer$.next(peer);
     }
     // Save in localStorage
     this.userDataProvider.addOrUpdateNetwork(this._network, this.userDataProvider.currentProfile.networkId);
-    this._api = new arkts.Client(this._network);
+    this._api = new phantomts.Client(this._network);
 
     this.fetchDelegates(constants.NUM_ACTIVE_DELEGATES * 2).subscribe((data) => {
       this._delegates = data;
@@ -351,9 +351,9 @@ export class ArkApiProvider {
     this.fetchFees().subscribe();
   }
 
-  private fetchFees(): Observable<arkts.Fees> {
+  private fetchFees(): Observable<phantomts.Fees> {
     return Observable.create((observer) => {
-      arkts.BlockApi.networkFees(this._network).subscribe((response) => {
+      phantomts.BlockApi.networkFees(this._network).subscribe((response) => {
         if (response && response.success) {
           this._fees = response.fees;
           this.storageProvider.set(constants.STORAGE_FEES, this._fees);

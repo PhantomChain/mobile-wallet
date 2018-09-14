@@ -61,14 +61,14 @@
     "WELCOME": "Добро пожаловать на борт"
   },
   "SIGN_IN_PAGE": {
-    "ARK_WALLET": "AРK Кошелек",
+    "PHANTOM_WALLET": "AРK Кошелек",
     "CREATE_PROFILE": "Создать профиль",
     "SLOGAN": "Добро пожаловать в АРК Экосистема"
   },
   "SIGN_OUT_PROFILE_TEXT": "Выйдите из профиля?",
-  "MARKETS_PAGE": {
-    "MARKET_CAP": "Рыночная капитализация.",
-    "MARKET_DATA": "Рынок",
+  "MPHANTOMETS_PAGE": {
+    "MPHANTOMET_CAP": "Рыночная капитализация.",
+    "MPHANTOMET_DATA": "Рынок",
     "PERCENTAGE_CHANGE": "Смена 24 часа",
     "PRICE": "Цена",
     "VOLUME": "Объем"
@@ -127,7 +127,7 @@
     "CLEAR_DATA": "Очистить Данные",
     "CLEAR_DATA_TEXT": "Все ваши данные, включая профили, кошельки и контакты будут удалены из приложения и сброс настроек.",
     "CURRENCY": "Валюта",
-    "DARK_MODE": "Темный Режим",
+    "DPHANTOM_MODE": "Темный Режим",
     "LANGUAGE": "Язык",
     "PRIVACY_POLICY": "Конфиденциальность",
     "SECURITY": "Безопасность",

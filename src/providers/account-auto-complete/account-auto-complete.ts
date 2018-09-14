@@ -4,7 +4,7 @@ import 'rxjs/add/operator/map';
 import lodash from 'lodash';
 
 import { UserDataProvider } from '@providers/user-data/user-data';
-import { PublicKey } from 'ark-ts/core';
+import { PublicKey } from 'phantom-ts/core';
 import { AutoCompleteAccount, AutoCompleteAccountType, Contact } from '@models/contact';
 import { Wallet } from '@models/wallet';
 

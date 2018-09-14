@@ -63,10 +63,10 @@ page-intro {
   }
 }
 
-.dark-theme {
+.dphantom-theme {
   page-intro {
     p { 
-      color: color($darkColors, secondary, base);
+      color: color($dphantomColors, secondary, base);
     }
 
     .slide-image {
@@ -75,15 +75,15 @@ page-intro {
       margin: 2em 0;
 
       &.anytime {
-        content: url('../assets/img/dark/intro/anytime.png');
+        content: url('../assets/img/dphantom/intro/anytime.png');
       }
 
       &.pincode {
-        content: url('../assets/img/dark/intro/pincode.png');
+        content: url('../assets/img/dphantom/intro/pincode.png');
       }
 
       &.fast-easy {
-        content: url('../assets/img/dark/intro/fast-easy.png');
+        content: url('../assets/img/dphantom/intro/fast-easy.png');
       }
     }
   }

@@ -25,7 +25,7 @@
     </ion-row>
     <ion-row>
       <ion-col text-center>
-        <ark-qr-code [address]="address" [amount]="amount ? amount : null" [size]="140"></ark-qr-code>
+        <phantom-qr-code [address]="address" [amount]="amount ? amount : null" [size]="140"></phantom-qr-code>
       </ion-col>
     </ion-row>
     <amount (onChange)="amount = $event.amount"></amount>

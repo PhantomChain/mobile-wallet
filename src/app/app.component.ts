@@ -9,7 +9,7 @@ import { ScreenOrientation } from '@ionic-native/screen-orientation';
 import { AuthProvider } from '@providers/auth/auth';
 import { UserDataProvider } from '@providers/user-data/user-data';
 import { SettingsDataProvider } from '@providers/settings-data/settings-data';
-import { ArkApiProvider } from '@providers/ark-api/ark-api';
+import { PhantomApiProvider } from '@providers/phantom-api/phantom-api';
 import { ToastProvider } from '@providers/toast/toast';
 import { LocalNotificationsProvider } from '@providers/local-notifications/local-notifications';
 
@@ -46,7 +46,7 @@ export class MyApp implements OnInit, OnDestroy {
     private authProvider: AuthProvider,
     private translateService: TranslateService,
     private userDataProvider: UserDataProvider,
-    private arkApiProvider: ArkApiProvider,
+    private phantomApiProvider: PhantomApiProvider,
     private settingsDataProvider: SettingsDataProvider,
     private toastProvider: ToastProvider,
     private localNotificationsProvider: LocalNotificationsProvider,
@@ -189,10 +189,10 @@ export class MyApp implements OnInit, OnDestroy {
 
   initTheme() {
     this.settingsDataProvider.settings.subscribe(settings => {
-      if (settings.darkMode) {
-        this.renderer.addClass(this.element.nativeElement.parentNode, 'dark-theme');
+      if (settings.dphantomMode) {
+        this.renderer.addClass(this.element.nativeElement.parentNode, 'dphantom-theme');
       } else {
-        this.renderer.removeClass(this.element.nativeElement.parentNode, 'dark-theme');
+        this.renderer.removeClass(this.element.nativeElement.parentNode, 'dphantom-theme');
       }
     });
   }
@@ -234,7 +234,7 @@ export class MyApp implements OnInit, OnDestroy {
       .takeUntil(this.unsubscriber$)
       .debounceTime(500)
       .subscribe((wallet: Wallet) => {
-        this.arkApiProvider
+        this.phantomApiProvider
             .getDelegateByPublicKey(wallet.publicKey)
             .subscribe(delegate => this.userDataProvider.ensureWalletDelegateProperties(wallet, delegate));
       });

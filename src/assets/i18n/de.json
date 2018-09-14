@@ -43,7 +43,7 @@
     "NAME": "Name",
     "NETHASH": "Nethash",
     "MANAGE_NETWORKS": "Benutzerdefinierte Netzwerke verwalten",
-    "MARKET_SYMBOL_NAME": "Markt-Symbol-Name (um Preise in USD, BTC, etc. umzurechnen)",
+    "MPHANTOMET_SYMBOL_NAME": "Mphantomt-Symbol-Name (um Preise in USD, BTC, etc. umzurechnen)",
     "OR_CREATE_NEW": "... oder erstelle ein neues benutzerdefiniertes Netzwerk",
     "SAVE_SUCCESSFUL": "Netzwerk wurde erfolgreich gespeichert!",
     "SEED_SERVER": "Seed Server URL",
@@ -90,20 +90,20 @@
     "FAST_EASY": "Schnell und einfach",
     "GET_STARTED": "Beginnen",
     "SECURITY": "Sicherheit",
-    "TEXT_1": "Wir bieten alle Werkzeuge um deine ARK Token zu verwalten, jederzeit, überall, weltweit!",
+    "TEXT_1": "Wir bieten alle Werkzeuge um deine PHANTOM Token zu verwalten, jederzeit, überall, weltweit!",
     "TEXT_2": "All deine vertraulichen Daten sind mittels des PBKDF2 Algorithmus und einer AES-256 Verschlüsselung sicher gespeichert und werden zusätzlich durch deinen PIN Code geschützt",
     "TEXT_3": "Wechsle zwischen Profilen und Wallets, prüfe deinen Kontostand, sende und empfange Guthaben und vieles mehr",
     "WELCOME": "Willkommen an Board"
   },
   "SIGN_IN_PAGE": {
-    "ARK_WALLET": "ARK Wallet",
+    "PHANTOM_WALLET": "PHANTOM Wallet",
     "CREATE_PROFILE": "Erstelle ein Profil",
-    "SLOGAN": "Willkommen beim ARK Ecosystem"
+    "SLOGAN": "Willkommen beim PHANTOM Ecosystem"
   },
   "SIGN_OUT_PROFILE_TEXT": "Ausloggen?",
-  "MARKETS_PAGE": {
-    "MARKET_CAP": "Markt Cap.",
-    "MARKET_DATA": "Markt Daten",
+  "MPHANTOMETS_PAGE": {
+    "MPHANTOMET_CAP": "Mphantomt Cap.",
+    "MPHANTOMET_DATA": "Mphantomt Daten",
     "PERCENTAGE_CHANGE": "24h Änderung",
     "PRICE": "Preis",
     "VOLUME": "Volumen"
@@ -175,7 +175,7 @@
     "CLEAR_DATA": "Lösche Daten",
     "CLEAR_DATA_TEXT": "Alle deine Daten, inklusive Profile, Wallets und Kontakte werden von der App gelöscht und zurückgesetzt.",
     "CURRENCY": "Währung",
-    "DARK_MODE": "Nachtmodus",
+    "DPHANTOM_MODE": "Nachtmodus",
     "LANGUAGE": "Sprache",
     "NOTIFICATIONS": "Benachrichtigungen",
     "PRIVACY_POLICY": "Privatsphäre",
@@ -244,7 +244,7 @@
     "ADD_WALLET_TEXT": "Um ein Wallet zu importieren oder hinzuzufügen, klicke den nachfolgenden Button",
     "ADDRESS": "Adresse",
     "ALERT_SUCCESSFULLY_ENCRYPTED_SECOND_PASSPHRASE": "Die zweite Passphrase wurde erfolgreich verschlüsselt",
-    "BACKUP_ACCOUNT": "WICHTIG! Sichere diese geheime Passphrase, ohne diese Wörter kannst du dein Wallet nicht wiederherstellen und ALLE DEINE ARK MÜNZEN WERDEN VERLOREN SEIN.",
+    "BACKUP_ACCOUNT": "WICHTIG! Sichere diese geheime Passphrase, ohne diese Wörter kannst du dein Wallet nicht wiederherstellen und ALLE DEINE PHANTOM MÜNZEN WERDEN VERLOREN SEIN.",
     "BACKUP_PASSPHRASE": "Sichere diese geheime Passphrase, ohne diese Wörter kannst du dein Wallet nicht wiederherstellen.",
     "BACKUP_SECOND_PASSPHRASE": "Sichere diese zweite Passphrase, ohne diese Wörter kannst du dein Wallet nicht wiederherstellen.",
     "BACKUP_SECOND_PASSPHRASE_SECURELY_RETYPE_TEXT": "Du kannst eine Passphrase deiner Wahl hinzufügen. Vergiss nicht diese zu sichern, du musst sie nachher nochmals zur Bestätigung eingeben.",

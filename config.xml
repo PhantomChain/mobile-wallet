@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ark.wallet.mobile" version="1.1.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Ark Mobile</name>
-    <description>ARK</description>
-    <author email="lucio@ark.io" href="http://ark.io/">Ark Ecosystem</author>
+<widget id="io.phantom.wallet.mobile" version="1.1.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Phantom Mobile</name>
+    <description>PHANTOM</description>
+    <author email="lucio@phantom.org" href="http://phantom.org/">Phantom Ecosystem</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-navigation href="http://ionic.local/*" />

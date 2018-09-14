@@ -12,7 +12,7 @@ import { AuthProvider } from '@providers/auth/auth';
 import { UserDataProvider } from '@providers/user-data/user-data';
 import { NetworkProvider } from '@providers/network/network';
 import { ContactsProvider } from '@providers/contacts/contacts';
-import { ArkApiProvider } from '@providers/ark-api/ark-api';
+import { PhantomApiProvider } from '@providers/phantom-api/phantom-api';
 import { MarketDataProvider } from '@providers/market-data/market-data';
 import { SettingsDataProvider } from '@providers/settings-data/settings-data';
 import { ToastProvider } from '@providers/toast/toast';
@@ -78,7 +78,7 @@ export function httpLoaderFactory(http: HttpClient) {
     UserDataProvider,
     NetworkProvider,
     ContactsProvider,
-    ArkApiProvider,
+    PhantomApiProvider,
     MarketDataProvider,
     SettingsDataProvider,
     ForgeProvider,
