@@ -8,11 +8,11 @@ page-profile-signin {
   }
 }
 
-.dphantom-theme {
+.dark-theme {
   page-profile-signin {
     button.more {
       .icon {
-        color: lighten(color($dphantomColors, primary-background, base), 50%);
+        color: lighten(color($darkColors, primary-background, base), 50%);
       }
     }
   }

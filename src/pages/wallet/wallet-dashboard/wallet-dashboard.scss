@@ -11,7 +11,7 @@ page-wallet-dashboard {
       background-image: url('../assets/img/light/wallet/delegate-balance.png');
     }
 
-    .dphantom-navbar > .toolbar-background {
+    .dark-navbar > .toolbar-background {
       background-color: transparent;
     }
   }
@@ -53,7 +53,7 @@ page-wallet-dashboard {
     width: 100%;
     margin: .7em auto;
     box-shadow: none;
-    border-bottom: 1px solid dphantomen(color($colors, primary-background, base), 5%);
+    border-bottom: 1px solid darken(color($colors, primary-background, base), 5%);
 
     .icon-bg {
       margin: 0;
@@ -89,10 +89,10 @@ page-wallet-dashboard {
   }
 }
 
-.dphantom-theme {
+.dark-theme {
   page-wallet-dashboard {
     .tx {
-      border-bottom: 1px solid color($dphantomColors, secondary-background, base);
+      border-bottom: 1px solid color($darkColors, secondary-background, base);
     }
   }
 }

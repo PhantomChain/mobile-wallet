@@ -6,13 +6,13 @@ import { Contact, Wallet, SendTransactionForm, WalletKeys } from '@models/model'
 
 import { UserDataProvider } from '@providers/user-data/user-data';
 import { ContactsProvider } from '@providers/contacts/contacts';
-import { PhantomApiProvider } from '@providers/phantom-api/phantom-api';
+import { ArkApiProvider } from '@providers/ark-api/ark-api';
 import { ToastProvider } from '@providers/toast/toast';
 
 import { AccountAutoCompleteService } from '@providers/account-auto-complete/account-auto-complete';
 
-import { PublicKey } from 'phantom-ts/core';
-import { Network, Fees } from 'phantom-ts/model';
+import { PublicKey } from 'ark-ts/core';
+import { Network, Fees } from 'ark-ts/model';
 import { Subject } from 'rxjs/Subject';
 
 import { TruncateMiddlePipe } from '@pipes/truncate-middle/truncate-middle';
@@ -21,14 +21,14 @@ import { PinCodeComponent } from '@components/pin-code/pin-code';
 import { ConfirmTransactionComponent } from '@components/confirm-transaction/confirm-transaction';
 import { QRScannerComponent } from '@components/qr-scanner/qr-scanner';
 import * as constants from '@app/app.constants';
-import { TransactionSend } from 'phantom-ts';
+import { TransactionSend } from 'ark-ts';
 
 import { AutoCompleteComponent } from 'ionic2-auto-complete';
 import { AutoCompleteAccount, AutoCompleteAccountType } from '@models/contact';
 import { TranslatableObject } from '@models/translate';
 import { QRCodeScheme } from '@models/model';
 import { BigNumber } from 'bignumber.js';
-import { PhantomUtility } from '../../../utils/phantom-utility';
+import { ArkUtility } from '../../../utils/ark-utility';
 import { AddressCheckerProvider} from '@providers/address-checker/address-checker';
 import { AddressCheckResult } from '@providers/address-checker/address-check-result';
 import { AmountComponent } from '@components/amount/amount';
@@ -84,7 +84,7 @@ export class TransactionSendPage implements OnInit {
     private navParams: NavParams,
     private userDataProvider: UserDataProvider,
     private contactsProvider: ContactsProvider,
-    private phantomApiProvider: PhantomApiProvider,
+    private arkApiProvider: ArkApiProvider,
     private toastProvider: ToastProvider,
     public contactsAutoCompleteService: AccountAutoCompleteService,
     private unitsSatoshiPipe: UnitsSatoshiPipe,
@@ -106,10 +106,10 @@ export class TransactionSendPage implements OnInit {
           key: 'API.BALANCE_TOO_LOW_DETAIL',
           parameters: {
             token: this.currentNetwork.token,
-            fee: PhantomUtility.phantomtoshiToPhantom(this.fees.send),
-            amount: PhantomUtility.phantomtoshiToPhantom(balance),
-            totalAmount: PhantomUtility.phantomtoshiToPhantom(balance + this.fees.send),
-            balance: PhantomUtility.phantomtoshiToPhantom(balance)
+            fee: ArkUtility.arktoshiToArk(this.fees.send),
+            amount: ArkUtility.arktoshiToArk(balance),
+            totalAmount: ArkUtility.arktoshiToArk(balance + this.fees.send),
+            balance: ArkUtility.arktoshiToArk(balance)
           }
         } as TranslatableObject,
         10000);
@@ -259,7 +259,7 @@ export class TransactionSendPage implements OnInit {
       recipientId: this.transaction.recipientAddress,
     };
 
-    this.phantomApiProvider.api.transaction.createTransaction(data).subscribe((transaction) => {
+    this.arkApiProvider.api.transaction.createTransaction(data).subscribe((transaction) => {
       this.confirmTransaction.open(transaction, result.keys, result.checkerResult);
     }, () => {
       this.toastProvider.error('TRANSACTIONS_PAGE.CREATE_TRANSACTION_ERROR');
@@ -282,7 +282,7 @@ export class TransactionSendPage implements OnInit {
   }
 
   ionViewDidLoad() {
-    this.phantomApiProvider.fees.subscribe((fees) => this.fees = fees);
+    this.arkApiProvider.fees.subscribe((fees) => this.fees = fees);
     this.hasNotSent();
   }
 

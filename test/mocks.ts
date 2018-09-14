@@ -1,7 +1,7 @@
 import { EventEmitter, Pipe } from '@angular/core';
 import { Observable } from 'rxjs';
 
-export class PhantomApiProviderMock {
+export class ArkApiProviderMock {
 }
 
 export class AuthProviderMock {

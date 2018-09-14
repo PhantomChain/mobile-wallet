@@ -1,4 +1,4 @@
-import { Network, Peer } from 'phantom-ts';
+import { Network, Peer } from 'ark-ts';
 
 export class StoredNetwork extends Network {
   public marketTickerName: string;

@@ -3,7 +3,7 @@ export class UserSettings {
   public language: string;
   public currency: string;
   public wordlistLanguage: string;
-  public dphantomMode: boolean;
+  public darkMode: boolean;
   public notification: boolean;
 
   constructor() {}
@@ -13,7 +13,7 @@ export class UserSettings {
     settings.language = lang;
     settings.currency = 'usd';
     settings.wordlistLanguage = 'english';
-    settings.dphantomMode = false;
+    settings.darkMode = false;
     settings.notification = false;
 
     return settings;

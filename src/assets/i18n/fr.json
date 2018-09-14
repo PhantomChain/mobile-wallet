@@ -43,7 +43,7 @@
     "NAME": "Nom",
     "NETHASH": "Nethash",
     "MANAGE_NETWORKS": "Gérer les Réseaux Custom",
-    "MPHANTOMET_SYMBOL_NAME": "Symbole (pour récupérer les prix en USD, BTC, etc.)",
+    "MARKET_SYMBOL_NAME": "Symbole (pour récupérer les prix en USD, BTC, etc.)",
     "OR_CREATE_NEW": "... Ou créez un nouveau réseau custom",
     "SAVE_SUCCESSFUL": "Réseau sauvegardé !",
     "SEED_SERVER": "URL Serveur Source",
@@ -90,18 +90,18 @@
     "FAST_EASY": "Rapide et Facile",
     "GET_STARTED": "Commencez",
     "SECURITY": "Sécurité",
-    "TEXT_1": "Nous fournissons tous les outils dont vous avez besoin pour gérer vos jetons PHANTOM, à tout moment, partout dans le monde !",
+    "TEXT_1": "Nous fournissons tous les outils dont vous avez besoin pour gérer vos jetons ARK, à tout moment, partout dans le monde !",
     "TEXT_2": "Toutes vos données sensibles sont stockées en toute sécurité en utilisant l'algorithme PBKDF2 et le cryptage AES-256 protégé par votre code PIN",
     "TEXT_3": "Balayez l'écran entre les profils et les portefeuilles, vérifiez vos soldes, envoyer et recevoir des fonds et bien plus encore",
     "WELCOME": "Bienvenue"
   },
   "SIGN_IN_PAGE": {
-    "PHANTOM_WALLET": "Portefeuille PHANTOM",
+    "ARK_WALLET": "Portefeuille ARK",
     "CREATE_PROFILE": "Créer un profile",
-    "SLOGAN": "Bienvenue dans l'Ecosystème PHANTOM"
+    "SLOGAN": "Bienvenue dans l'Ecosystème ARK"
   },
-  "SIGN_OUT_PROFILE_TEXT": "Se déconnecter du profil ?",
-  "MPHANTOMETS_PAGE": {
+  "SIGN_OUT_PROFILE_TEXT": "Se déconnecter du profile ?",
+  "MARKETS_PAGE": {
     "MARKET_CAP": "Capitalisation",
     "MARKET_DATA": "Donnée du marché",
     "PERCENTAGE_CHANGE": "Change 24h",
@@ -174,7 +174,7 @@
     "CLEAR_DATA": "Effacer les données",
     "CLEAR_DATA_TEXT": "Toutes vos données, y compris les profils créés, les portefeuilles et les contacts seront supprimés de l'application et réinitialisés aux valeurs par défaut.",
     "CURRENCY": "Devise",
-    "DPHANTOM_MODE": "Mode sombre",
+    "DARK_MODE": "Mode sombre",
     "LANGUAGE": "Langue",
     "PRIVACY_POLICY": "Politique de confidentialité",
     "SECURITY": "Sécurité",
@@ -254,7 +254,7 @@
     "ADD_WALLET_TEXT": "Pour importer ou créer un portefeuille, cliquez sur le bouton ci-dessous",
     "ADDRESS": "Adresse",
     "ALERT_SUCCESSFULLY_ENCRYPTED_SECOND_PASSPHRASE": "Le deuxième mot de passe a été crypté avec succès",
-    "BACKUP_ACCOUNT": "IMPORTANT! Sauvegardez cette 'phrase d'authentification secrète' en toute sécurité, sans ces mots vous ne pouvez pas restaurer votre portefeuille ou envoyer des transactions et TOUS LES JETONS PHANTOM SERONT PERDUS.",
+    "BACKUP_ACCOUNT": "IMPORTANT! Sauvegardez cette 'phrase d'authentification secrète' en toute sécurité, sans ces mots vous ne pouvez pas restaurer votre portefeuille ou envoyer des transactions et TOUS LES JETONS ARK SERONT PERDUS.",
     "BACKUP_PASSPHRASE": "Sauvegarder ce mot de passe en toute sécurité, sans ces mots, vous ne pouvez pas restaurer votre portefeuille.",
     "BACKUP_SECOND_PASSPHRASE": "Sauvegardez ce second mot de passe en toute sécurité, sans ces mots, vous ne pouvez pas déplacer vos fonds.",
     "BACKUP_SECOND_PASSPHRASE_SECURELY_RETYPE_TEXT": "Vous pouvez le modifier pour un mot de passe de votre choix, n'oubliez pas de le sauvegarder en sureté. Vous devrez le retaper pour la validation.",

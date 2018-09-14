@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { NetworkProvider } from '@providers/network/network';
 import { Observable } from 'rxjs/Observable';
 import { UserDataProvider } from '@providers/user-data/user-data';
-import { PhantomApiProvider } from '@providers/phantom-api/phantom-api';
+import { ArkApiProvider } from '@providers/ark-api/ark-api';
 import { NeoApiProvider } from '@providers/neo-api/neo-api';
 import { Subscriber } from 'rxjs/Subscriber';
 import { CompleteHandler } from '../../utils/complete-handler';
@@ -14,7 +14,7 @@ export class AddressCheckerProvider {
 
   public constructor(private networkProvider: NetworkProvider,
                      private userDataProvider: UserDataProvider,
-                     private phantomApiProvider: PhantomApiProvider,
+                     private arkApiProvider: ArkApiProvider,
                      private neoApiProvider: NeoApiProvider) {
   }
 
@@ -59,7 +59,7 @@ export class AddressCheckerProvider {
   }
 
   public hasTransactions(address: string): Observable<boolean> {
-    return this.phantomApiProvider.api.transaction.list({
+    return this.arkApiProvider.api.transaction.list({
       senderId: address,
       recipientId: address,
       limit: 1

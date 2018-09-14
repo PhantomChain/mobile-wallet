@@ -66,9 +66,9 @@
     "SLOGAN": "Добро пожаловать в АРК Экосистема"
   },
   "SIGN_OUT_PROFILE_TEXT": "Выйдите из профиля?",
-  "MPHANTOMETS_PAGE": {
-    "MPHANTOMET_CAP": "Рыночная капитализация.",
-    "MPHANTOMET_DATA": "Рынок",
+  "MARKETS_PAGE": {
+    "MARKET_CAP": "Рыночная капитализация.",
+    "MARKET_DATA": "Рынок",
     "PERCENTAGE_CHANGE": "Смена 24 часа",
     "PRICE": "Цена",
     "VOLUME": "Объем"
@@ -127,7 +127,7 @@
     "CLEAR_DATA": "Очистить Данные",
     "CLEAR_DATA_TEXT": "Все ваши данные, включая профили, кошельки и контакты будут удалены из приложения и сброс настроек.",
     "CURRENCY": "Валюта",
-    "DPHANTOM_MODE": "Темный Режим",
+    "DARK_MODE": "Темный Режим",
     "LANGUAGE": "Язык",
     "PRIVACY_POLICY": "Конфиденциальность",
     "SECURITY": "Безопасность",

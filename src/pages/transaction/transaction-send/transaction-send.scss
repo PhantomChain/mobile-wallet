@@ -105,17 +105,17 @@ page-transaction-send {
   }
 }
 
-.dphantom-theme {
+.dark-theme {
   page-transaction-send {
     .qr-container .image {
-        content: url('../assets/img/dphantom/wallet/qr-code-button.png');
+        content: url('../assets/img/dark/wallet/qr-code-button.png');
     }
 
     ion-auto-complete ul {
-      background-color: color($dphantomColors, secondary-background, base);
+      background-color: color($darkColors, secondary-background, base);
 
       li {
-        border-bottom-color: color($dphantomColors, primary-background, base);
+        border-bottom-color: color($darkColors, primary-background, base);
       }
 
       .auto-complete-row {
@@ -125,13 +125,13 @@ page-transaction-send {
         }
 
         .autocomplete-second-line {
-          color: color($dphantomColors, secondary, base);
+          color: color($darkColors, secondary, base);
         }
       }
     }
 
     .icon {
-      color: lighten(color($dphantomColors, primary-background, base), 50%);
+      color: lighten(color($darkColors, primary-background, base), 50%);
     }
   }
 }

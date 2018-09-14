@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, LoadingController, ViewController } from 'ionic-angular';
 import { ToastProvider } from '@providers/toast/toast';
-import { LoaderAutoConfigure, Network, NetworkType, Peer, PeerVersion2ConfigResponse } from 'phantom-ts';
-import * as phantomts from 'phantom-ts';
+import { LoaderAutoConfigure, Network, NetworkType, Peer, PeerVersion2ConfigResponse } from 'ark-ts';
+import * as arkts from 'ark-ts';
 import lodash from 'lodash';
 
 @IonicPage()
@@ -35,7 +35,7 @@ export class CustomNetworkCreateModal {
     loading.present();
 
     const seedServerUrl = this.getSeedServerUrl();
-    new phantomts.Client(Network.getDefault(NetworkType.Mainnet))
+    new arkts.Client(Network.getDefault(NetworkType.Mainnet))
       .loader.autoConfigure(seedServerUrl.origin)
       .finally(() => loading.dismiss())
       .subscribe((r: LoaderAutoConfigure) => {
@@ -63,7 +63,7 @@ export class CustomNetworkCreateModal {
     loading.present();
 
     const seedServerUrl = this.getSeedServerUrl();
-    new phantomts.Client(Network.getDefault(NetworkType.Mainnet))
+    new arkts.Client(Network.getDefault(NetworkType.Mainnet))
       .peer.getVersion2Config(seedServerUrl.hostname, Number(seedServerUrl.port))
       .finally(() => loading.dismiss())
       .subscribe((r: PeerVersion2ConfigResponse) => {
@@ -83,7 +83,7 @@ export class CustomNetworkCreateModal {
         this.network.activePeer.port = Number(seedServerUrl.port);
         this.network.type = null;
 
-        const apiConfig = lodash.get(r, 'data.plugins["@phantomecosystem/core-api"]');
+        const apiConfig = lodash.get(r, 'data.plugins["@arkecosystem/core-api"]');
         if (!apiConfig || !apiConfig.enabled || !apiConfig.port) {
           this.configureError();
           return;

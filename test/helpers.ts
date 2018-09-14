@@ -30,13 +30,13 @@ import {
   Platform,
 } from 'ionic-angular';
 
-// import { PhantomApiProvider } from '@providers/phantom-api/phantom-api';
+// import { ArkApiProvider } from '@providers/ark-api/ark-api';
 import { AuthProvider } from '@providers/auth/auth';
 import { ToastProvider } from '@providers/toast/toast';
 import { UserDataProvider } from '@providers/user-data/user-data';
 
 import {
-  PhantomApiProviderMock,
+  ArkApiProviderMock,
   AuthProviderMock,
   DeepLinkerMock,
   ToastProviderMock,
@@ -96,7 +96,7 @@ export class TestHelpers {
         {provide: Platform, useFactory: () => PlatformMock.instance()},
         {provide: Config, useFactory: () => ConfigMock.instance()},
         {provide: DeepLinker, useClass: DeepLinkerMock},
-        // {provide: PhantomApiProvider, useClass: PhantomApiProviderMock},
+        // {provide: ArkApiProvider, useClass: ArkApiProviderMock},
         {provide: AuthProvider, useClass: AuthProviderMock},
         {provide: ToastProvider, useClass: ToastProviderMock},
         {provide: UserDataProvider, useClass: UserDataProviderMock},

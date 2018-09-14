@@ -26,15 +26,15 @@ page-transaction-response {
   }
 }
 
-.dphantom-theme {
+.dark-theme {
   page-transaction-response {
     .image {      
       &.tx-success {
-        content: url('../assets/img/dphantom/transaction/transfer-success.png');
+        content: url('../assets/img/dark/transaction/transfer-success.png');
       }
 
       &.tx-error {
-        content: url('../assets/img/dphantom/transaction/transfer-error.png');
+        content: url('../assets/img/dark/transaction/transfer-error.png');
       }
     }
   }

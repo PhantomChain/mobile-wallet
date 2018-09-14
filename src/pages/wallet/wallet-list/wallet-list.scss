@@ -13,7 +13,7 @@ page-wallet-list {
     padding: 0 25px;
 
     p {
-      color: lighten(color($colors, dphantom, base), 35%);
+      color: lighten(color($colors, dark, base), 35%);
       margin-bottom: 0;
     }
 
@@ -25,7 +25,7 @@ page-wallet-list {
       .fiat {
         font-size: 1.5rem;
         margin-left: 1em;
-        color: lighten(color($colors, dphantom, base), 35%);
+        color: lighten(color($colors, dark, base), 35%);
       }
     }
   }
@@ -135,7 +135,7 @@ page-wallet-list {
   }
 }
 
-.dphantom-theme {
+.dark-theme {
   page-wallet-list {
     .toolbar-title,
     .bar-button-default {
@@ -144,11 +144,11 @@ page-wallet-list {
 
     .content {
       &.normal {
-        background: linear-gradient(0deg, color($dphantomColors, primary-background, base) 0%, color($dphantomColors, primary-background, base) 70%, color($dphantomColors, wallet-normal-gradient, base) 100%);
+        background: linear-gradient(0deg, color($darkColors, primary-background, base) 0%, color($darkColors, primary-background, base) 70%, color($darkColors, wallet-normal-gradient, base) 100%);
       }
 
       &.delegate {
-        background: linear-gradient(0deg, color($dphantomColors, primary-background, base) 0%, color($dphantomColors, primary-background, base) 70%, color($dphantomColors, wallet-delegate-gradient, base) 100%);
+        background: linear-gradient(0deg, color($darkColors, primary-background, base) 0%, color($darkColors, primary-background, base) 70%, color($darkColors, wallet-delegate-gradient, base) 100%);
       }
     }
   }

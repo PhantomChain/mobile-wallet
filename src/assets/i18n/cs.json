@@ -64,20 +64,20 @@
     "FAST_EASY": "Rychlé a jednoduché",
     "GET_STARTED": "Pojďme začít",
     "SECURITY": "Bezpečnost",
-    "TEXT_1": "Poskytujeme všechny nástroje které potřebuješ pro práci s PHANTOM měnou, kdykoli, kdekoli, celosvětově!",
+    "TEXT_1": "Poskytujeme všechny nástroje které potřebuješ pro práci s ARK měnou, kdykoli, kdekoli, celosvětově!",
     "TEXT_2": "Všechny tvá citlivá data jsou bezpečně uložena za použití PBKDF2 algoritmu a AES-256 kódování, chráněna tvým PIN kódem",
     "TEXT_3": "Prohazovat profily a peněženky, kontrolovat zůstatky, posílat a přijímat měnu ale i daleko víc",
     "WELCOME": "Vítej na palubě"
   },
   "SIGN_IN_PAGE": {
-    "PHANTOM_WALLET": "PHANTOM peněženka",
+    "ARK_WALLET": "ARK peněženka",
     "CREATE_PROFILE": "Vytvořit profil",
-    "SLOGAN": "Vítej do PHANTOM ekosystému"
+    "SLOGAN": "Vítej do ARK ekosystému"
   },
   "SIGN_OUT_PROFILE_TEXT": "Odhlásit se z profilu?",
-  "MPHANTOMETS_PAGE": {
-    "MPHANTOMET_CAP": "Trh kap.",
-    "MPHANTOMET_DATA": "Trh data",
+  "MARKETS_PAGE": {
+    "MARKET_CAP": "Trh kap.",
+    "MARKET_DATA": "Trh data",
     "PERCENTAGE_CHANGE": "24h změna",
     "PRICE": "Cena",
     "VOLUME": "Volume"
@@ -144,7 +144,7 @@
     "CLEAR_DATA": "Vymazat data",
     "CLEAR_DATA_TEXT": "Všechny data včetně vytvořených profilů, peněženek a kontaktů budou smazána z aplikace, která se tak vrátí do výchozího nastavení.",
     "CURRENCY": "Měna",
-    "DPHANTOM_MODE": "Tmavý režim",
+    "DARK_MODE": "Tmavý režim",
     "LANGUAGE": "Jazyk",
     "PRIVACY_POLICY": "Zásady ochrany osobních údajů",
     "SECURITY": "Bezpečnost",
@@ -200,9 +200,9 @@
     "ADD_WALLET_TEXT": "Pro vytvoření nové peněženky nebo její import klikni na tlačítko níže",
     "ADDRESS": "Adresa",
     "ALERT_SUCCESSFULLY_ENCRYPTED_SECOND_PASSPHRASE": "Druhá kontrolní fráze byla úspěšně zakódovaná",
-    "BACKUP_ACCOUNT": "DŮLEŽITÉ! Bezpečně si zazálohuj 'tajnou kontrolní frázi', bez ní nedokážeš obnovit svou peněženku nebo aktivovat peněženku na jiném zařízení, takže VŠECHNY TVOJE PHANTOM PENÍZE BUDOU NAVŽDY ZTRACENY.",
+    "BACKUP_ACCOUNT": "DŮLEŽITÉ! Bezpečně si zazálohuj 'tajnou kontrolní frázi', bez ní nedokážeš obnovit svou peněženku nebo aktivovat peněženku na jiném zařízení, takže VŠECHNY TVOJE ARK PENÍZE BUDOU NAVŽDY ZTRACENY.",
     "BACKUP_PASSPHRASE": "Zazálohuj si bezpečně kontrolní frázi, bez ní nedokážeš obnovit svou peněženku.",
-    "BACKUP_SECOND_PASSPHRASE": "Zazálohuj si bezpečně kontrolní frázi, bez ní nemůžeš disponovat svími PHANTOM penězi.",
+    "BACKUP_SECOND_PASSPHRASE": "Zazálohuj si bezpečně kontrolní frázi, bez ní nemůžeš disponovat svími ARK penězi.",
     "BACKUP_SECOND_PASSPHRASE_SECURELY_RETYPE_TEXT": "Můžeš editovat a vytvořit si tak heslo jaké chceš. Pamatuj, že si ho musíš dobře zazálohovat. Pro kontrolu ho budeš zadávat ještě jednou.",
     "BALANCE": "Zůstatek",
     "BIP38_SEED": "BIP38 Seed",

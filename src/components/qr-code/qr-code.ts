@@ -3,7 +3,7 @@ import { Component, Input, OnChanges } from '@angular/core';
 import * as constants from '@app/app.constants';
 
 @Component({
-  selector: 'phantom-qr-code',
+  selector: 'ark-qr-code',
   templateUrl: 'qr-code.html'
 })
 export class QRCodeComponent implements OnChanges {
