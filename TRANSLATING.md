@@ -1,6 +1,6 @@
 # Translations
 
-You can help out by translating the ARK Mobile project to your language! 
+You can help out by translating the Phantom Mobile project to your language! 
 
 ## Steps
 

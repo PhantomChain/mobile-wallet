@@ -6,7 +6,7 @@
 [![Latest Version](https://badgen.now.sh/github/release/PhantomEcosystem/mobile-wallet)](https://github.com/PhantomEcosystem/mobile-wallet/releases/latest)
 [![License: MIT](https://badgen.now.sh/badge/license/MIT/green)](https://opensource.org/licenses/MIT)
 
-The PHANTOM mobile wallet is a hybrid application (using the same codebase for Android and iOS which helps with coordinated development). Created using Ionic framework and ARK’s [TypeScript API](https://github.com/ArkEcosystem/ark-ts) to interact with the ARK network via your mobile phone, anytime, anywhere (as long as you have an internet connection).
+The PHANTOM mobile wallet is a hybrid application (using the same codebase for Android and iOS which helps with coordinated development). Created using Ionic framework and PHANTOM's [TypeScript API](https://github.com/PhantomChain/phantom-ts) to interact with the PHANTOM network via your mobile phone, anytime, anywhere (as long as you have an internet connection).
 
 ## Download
 
@@ -81,8 +81,6 @@ If you discover a security vulnerability within this application, please send an
 ## Contributing
 
 - If you find any bugs, submit an [issue](../../issues) or open [pull-request](../../pulls), helping us catch and fix them.
-- Engage with other users and developers on [ARK Slack](https://ark.io/slack/).
-- Join to our [gitter](https://gitter.im/ark-developers/Lobby).
 - [Contribute bounties](./CONTRIBUTING.md).
 - [Help translate](./TRANSLATING.md).
 
@@ -94,4 +92,4 @@ If you discover a security vulnerability within this application, please send an
 
 ## License
 
-[MIT](LICENSE) © [ArkEcosystem](https://ark.io)
+[MIT](LICENSE) © [Phantom](https://phantom.org)
