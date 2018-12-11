@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController, AlertController } from 'ionic-angular';
 
-import { ArkApiProvider } from '@providers/ark-api/ark-api';
+import { PhantomApiProvider } from '@providers/phantom-api/phantom-api';
 import { UserDataProvider } from '@providers/user-data/user-data';
-import { Delegate, Fees, Network } from 'ark-ts';
+import { Delegate, Fees, Network } from 'phantom-ts';
 
 import { Wallet } from '@models/wallet';
 
@@ -30,7 +30,7 @@ export class DelegateDetailPage {
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
-    private arkApiProvider: ArkApiProvider,
+    private phantomApiProvider: PhantomApiProvider,
     private viewCtrl: ViewController,
     private clipboard: Clipboard,
     private userDataProvider: UserDataProvider,
@@ -42,10 +42,10 @@ export class DelegateDetailPage {
     this.walletVote = this.navParams.get('vote');
 
     this.qraddress = `'{a: "${this.delegate.address}"}'`;
-    this.currentNetwork = this.arkApiProvider.network;
+    this.currentNetwork = this.phantomApiProvider.network;
     this.currentWallet = this.userDataProvider.currentWallet;
 
-    this.arkApiProvider.fees.subscribe((fees) => this.fees = fees);
+    this.phantomApiProvider.fees.subscribe((fees) => this.fees = fees);
 
     if (!this.delegate) { this.navCtrl.pop(); }
   }

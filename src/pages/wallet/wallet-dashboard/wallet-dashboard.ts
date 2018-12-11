@@ -19,12 +19,12 @@ import 'rxjs/add/operator/finally';
 
 import { Profile, Wallet, Transaction, MarketTicker, MarketCurrency, MarketHistory, WalletKeys } from '@models/model';
 import { UserDataProvider } from '@providers/user-data/user-data';
-import { ArkApiProvider } from '@providers/ark-api/ark-api';
+import { PhantomApiProvider } from '@providers/phantom-api/phantom-api';
 import { MarketDataProvider } from '@providers/market-data/market-data';
 import { SettingsDataProvider } from '@providers/settings-data/settings-data';
 
 import lodash from 'lodash';
-import { Network, Fees, TransactionDelegate, PrivateKey, TransactionType } from 'ark-ts';
+import { Network, Fees, TransactionDelegate, PrivateKey, TransactionType } from 'phantom-ts';
 
 import { TranslateService } from '@ngx-translate/core';
 
@@ -74,7 +74,7 @@ export class WalletDashboardPage implements OnInit, OnDestroy {
     private navCtrl: NavController,
     private navParams: NavParams,
     private userDataProvider: UserDataProvider,
-    private arkApiProvider: ArkApiProvider,
+    private phantomApiProvider: PhantomApiProvider,
     private actionSheetCtrl: ActionSheetController,
     private translateService: TranslateService,
     private marketDataProvider: MarketDataProvider,
@@ -337,7 +337,7 @@ export class WalletDashboardPage implements OnInit, OnDestroy {
       publicKey
     };
 
-    this.arkApiProvider.api.transaction.createDelegate(transaction)
+    this.phantomApiProvider.api.transaction.createDelegate(transaction)
       .takeUntil(this.unsubscriber$)
       .subscribe((data) => {
         this.confirmTransaction.open(data, keys);
@@ -356,7 +356,7 @@ export class WalletDashboardPage implements OnInit, OnDestroy {
   private createSignature(keys: WalletKeys) {
     keys.secondPassphrase = this.newSecondPassphrase;
 
-    this.arkApiProvider.api.transaction
+    this.phantomApiProvider.api.transaction
     .createSignature(keys.key, keys.secondPassphrase)
     .takeUntil(this.unsubscriber$)
     .subscribe((data) => {
@@ -375,7 +375,7 @@ export class WalletDashboardPage implements OnInit, OnDestroy {
 
   private refreshTransactions(save: boolean = true, loader?: Loading|Refresher) {
     this.zone.runOutsideAngular(() => {
-      this.arkApiProvider.api.transaction.list({
+      this.phantomApiProvider.api.transaction.list({
         recipientId: this.address,
         senderId: this.address,
         orderBy: 'timestamp:desc',
@@ -407,14 +407,14 @@ export class WalletDashboardPage implements OnInit, OnDestroy {
   }
 
   private refreshAccount() {
-    this.arkApiProvider.api.account.get({address: this.address}).takeUntil(this.unsubscriber$).subscribe((response) => {
+    this.phantomApiProvider.api.account.get({address: this.address}).takeUntil(this.unsubscriber$).subscribe((response) => {
       if (response.success) {
         this.wallet.deserialize(response.account);
         if (this.wallet.isDelegate) {
           return;
         }
 
-        this.arkApiProvider
+        this.phantomApiProvider
             .getDelegateByPublicKey(this.wallet.publicKey)
             .subscribe(delegate => this.userDataProvider.ensureWalletDelegateProperties(this.wallet, delegate));
       }
@@ -449,7 +449,7 @@ export class WalletDashboardPage implements OnInit, OnDestroy {
 
   private load() {
 
-    this.arkApiProvider.fees.subscribe((fees) => this.fees = fees);
+    this.phantomApiProvider.fees.subscribe((fees) => this.fees = fees);
     if (this.marketDataProvider.cachedTicker) {
       this.setTicker(this.marketDataProvider.cachedTicker);
     }

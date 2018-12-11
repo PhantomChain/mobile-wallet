@@ -9,8 +9,8 @@ import { MarketDataProvider } from '@providers/market-data/market-data';
 import { SettingsDataProvider } from '@providers/settings-data/settings-data';
 
 import { Profile, MarketCurrency, MarketTicker, MarketHistory, Wallet } from '@models/model';
-import { PublicKey } from 'ark-ts/core';
-import { Network } from 'ark-ts/model';
+import { PublicKey } from 'phantom-ts/core';
+import { Network } from 'phantom-ts/model';
 
 import { TranslateService } from '@ngx-translate/core';
 
@@ -173,8 +173,8 @@ export class WalletListPage implements OnDestroy {
     }
 
     this.totalBalance = lodash(list).values().sumBy((w) => parseInt(w.balance));
-    const wholeArk = (this.totalBalance / constants.WALLET_UNIT_TO_SATOSHI);
-    this.fiatBalance = wholeArk * (this.fiatCurrency ? this.fiatCurrency.price : 0);
+    const wholePhantom = (this.totalBalance / constants.WALLET_UNIT_TO_SATOSHI);
+    this.fiatBalance = wholePhantom * (this.fiatCurrency ? this.fiatCurrency.price : 0);
 
     this.wallets = lodash.orderBy(list, ['lastUpdate'], ['desc']);
     if (!this.selectedWallet && this.wallets.length) {

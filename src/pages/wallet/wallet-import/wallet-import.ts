@@ -2,7 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, ModalController, NavParams } from 'ionic-angular';
 import { QRCodeScheme } from '@models/model';
 import { UserDataProvider } from '@providers/user-data/user-data';
-import { ArkApiProvider } from '@providers/ark-api/ark-api';
+import { PhantomApiProvider } from '@providers/phantom-api/phantom-api';
 import { ToastProvider } from '@providers/toast/toast';
 import { QRScannerComponent } from '@components/qr-scanner/qr-scanner';
 import { BaseWalletImport } from '@root/src/pages/wallet/wallet-import/wallet-import.base';
@@ -21,13 +21,13 @@ export class WalletImportPage extends BaseWalletImport {
     navParams: NavParams,
     navCtrl: NavController,
     userDataProvider: UserDataProvider,
-    arkApiProvider: ArkApiProvider,
+    phantomApiProvider: PhantomApiProvider,
     toastProvider: ToastProvider,
     modalCtrl: ModalController,
     networkProvider: NetworkProvider,
     settingsDataProvider: SettingsDataProvider
   ) {
-    super(navParams, navCtrl, userDataProvider, arkApiProvider, toastProvider, modalCtrl, networkProvider, settingsDataProvider);
+    super(navParams, navCtrl, userDataProvider, phantomApiProvider, toastProvider, modalCtrl, networkProvider, settingsDataProvider);
   }
 
   openManualImportPage(type: string) {

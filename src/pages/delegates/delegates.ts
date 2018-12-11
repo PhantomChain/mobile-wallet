@@ -2,10 +2,10 @@ import { Component, NgZone, OnDestroy, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController, Platform, Slides } from 'ionic-angular';
 
 import { Subject } from 'rxjs/Subject';
-import { ArkApiProvider } from '@providers/ark-api/ark-api';
+import { PhantomApiProvider } from '@providers/phantom-api/phantom-api';
 import { UserDataProvider } from '@providers/user-data/user-data';
 import { ToastProvider } from '@providers/toast/toast';
-import { Delegate, Network, VoteType, TransactionVote } from 'ark-ts';
+import { Delegate, Network, VoteType, TransactionVote } from 'phantom-ts';
 
 import { Wallet, WalletKeys } from '@models/model';
 
@@ -52,7 +52,7 @@ export class DelegatesPage implements OnDestroy {
     public platform: Platform,
     public navCtrl: NavController,
     public navParams: NavParams,
-    private arkApiProvider: ArkApiProvider,
+    private phantomApiProvider: PhantomApiProvider,
     private zone: NgZone,
     private modalCtrl: ModalController,
     private userDataProvider: UserDataProvider,
@@ -116,7 +116,7 @@ export class DelegatesPage implements OnDestroy {
       type,
     };
 
-    this.arkApiProvider.api.transaction.createVote(data).subscribe((transaction) => {
+    this.phantomApiProvider.api.transaction.createVote(data).subscribe((transaction) => {
       this.confirmTransaction.open(transaction, keys);
     });
   }
@@ -124,7 +124,7 @@ export class DelegatesPage implements OnDestroy {
   private fetchCurrentVote() {
     if (!this.currentWallet) { return; }
 
-    this.arkApiProvider.api.account
+    this.phantomApiProvider.api.account
       .votes({ address: this.currentWallet.address })
       .takeUntil(this.unsubscriber$)
       .subscribe((data) => {
@@ -137,7 +137,7 @@ export class DelegatesPage implements OnDestroy {
   }
 
   private onUpdateDelegates() {
-    this.arkApiProvider.onUpdateDelegates$
+    this.phantomApiProvider.onUpdateDelegates$
       .takeUntil(this.unsubscriber$)
       .do((delegates) => {
         this.zone.run(() => this.delegates = delegates);
@@ -146,10 +146,10 @@ export class DelegatesPage implements OnDestroy {
   }
 
   ionViewDidEnter() {
-    this.currentNetwork = this.arkApiProvider.network;
+    this.currentNetwork = this.phantomApiProvider.network;
     this.currentWallet = this.userDataProvider.currentWallet;
     this.zone.runOutsideAngular(() => {
-      this.arkApiProvider.delegates.subscribe((data) => this.zone.run(() => {
+      this.phantomApiProvider.delegates.subscribe((data) => this.zone.run(() => {
         this.delegates = data;
         this.activeDelegates = this.delegates.slice(0, constants.NUM_ACTIVE_DELEGATES);
         this.standByDelegates = this.delegates.slice(constants.NUM_ACTIVE_DELEGATES, this.delegates.length);
@@ -158,7 +158,7 @@ export class DelegatesPage implements OnDestroy {
 
     this.onUpdateDelegates();
     this.fetchCurrentVote();
-    this.arkApiProvider.fetchDelegates(constants.NUM_ACTIVE_DELEGATES * 2).subscribe();
+    this.phantomApiProvider.fetchDelegates(constants.NUM_ACTIVE_DELEGATES * 2).subscribe();
   }
 
   ngOnDestroy() {

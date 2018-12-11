@@ -57,15 +57,15 @@
     "FAST_EASY": "Snabb och Enkel",
     "GET_STARTED": "Kom igång",
     "SECURITY": "Säkerhet",
-    "TEXT_1": "Vi förser dig med alla verktyg du behöver för att hantera dina ARK-tokens, när som helst, överallt, i hela världen!",
+    "TEXT_1": "Vi förser dig med alla verktyg du behöver för att hantera dina PHANTOM-tokens, när som helst, överallt, i hela världen!",
     "TEXT_2": "All din känsliga data är säkert lagrad med PBKDF2-algoritmen och krypterad med AES-256 som beskyddas av din PIN-kod",
     "TEXT_3": "Svep mellan profiler och plånböcker, kolla dina saldon, skicka och ta emot tillgångar och mycket mera",
     "WELCOME": "Välkommen ombord"
   },
   "SIGN_IN_PAGE": {
-    "ARK_WALLET": "ARK Plånbok",
+    "PHANTOM_WALLET": "PHANTOM Plånbok",
     "CREATE_PROFILE": "Skapa en profil",
-    "SLOGAN": "Välkommen till ARK-Ekosystemet"
+    "SLOGAN": "Välkommen till PHANTOM-Ekosystemet"
   },
   "SIGN_OUT_PROFILE_TEXT": "Logga ut från Profilen?",
   "MARKETS_PAGE": {

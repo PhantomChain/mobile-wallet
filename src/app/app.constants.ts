@@ -2,7 +2,7 @@
 export const BLOCKCHAIN_PREMINNED = 125000000;
 
 // WALLET
-export const ARKTOSHI_DP = 8;
+export const PHANTOMTOSHI_DP = 8;
 export const WALLET_UNIT_TO_SATOSHI = 100000000;
 export const WALLET_REFRESH_PRICE_MILLISECONDS = 500 * 1000;
 export const WALLET_REFRESH_TRANSACTIONS_MILLISECONDS = 10 * 1000;
@@ -43,7 +43,7 @@ export const APP_TIMEOUT_DESTROY = 60000;
 export const PIN_ATTEMPTS_LIMIT = 3;
 export const PIN_ATTEMPTS_TIMEOUT_MILLISECONDS = 30 * 1000;
 
-// ARK
-export const PRIVACY_POLICY_URL = 'https://ark.io/PrivacyPolicy.txt';
-export const URI_QRCODE_SCHEME_PREFIX = 'ark:';
+// Phantom
+export const PRIVACY_POLICY_URL = 'https://phantom.org/PrivacyPolicy.txt';
+export const URI_QRCODE_SCHEME_PREFIX = 'phantom:';
 export const NUM_ACTIVE_DELEGATES = 51;
