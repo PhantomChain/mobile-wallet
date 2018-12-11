@@ -18,7 +18,7 @@ Coming Soon
 - Generate a new passphrase.
 - Encrypt access to your profile with a custom 6 digit PIN (AES256+PBKDF2).
 - Most transaction types are available: send, receive, vote, unvote, register a delegate.
-- Connects to both mainnet and devnet.
+- Connects to both mainnet and testnet.
 - Option for additional profiles (separate profiles for different PHANTOM addresses or networks).
 - Option to add contacts and easily transact with them.
 - Total balance of your combined PHANTOM addresses.
