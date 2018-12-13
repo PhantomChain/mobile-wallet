@@ -27,7 +27,7 @@ export class MarketDataProvider {
   private marketHistory: model.MarketHistory;
 
   private get marketTickerName(): string {
-    return this.userDataProvider.currentNetwork.marketTickerName || 'PHANTOM';
+    return this.userDataProvider.currentNetwork.marketTickerName || 'XPH';
   }
 
   constructor(
