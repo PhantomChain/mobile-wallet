@@ -52,7 +52,7 @@ export class TransactionShowPage {
   }
 
   openInExplorer() {
-    const url = `${this.currentNetwork.explorer}/tx/${this.transaction.id}`;
+    const url = `${this.currentNetwork.explorer}/#/tx/${this.transaction.id}`;
     return this.inAppBrowser.create(url, '_system');
   }
 
