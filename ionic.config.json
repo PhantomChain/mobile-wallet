@@ -1,8 +1,8 @@
 {
   "name": "phantom-ionic",
-  "app_id": "0894ffa2",
-  "type": "ionic-angular",
   "integrations": {
     "cordova": {}
-  }
+  },
+  "type": "ionic-angular",
+  "id": "0894ffa2"
 }
