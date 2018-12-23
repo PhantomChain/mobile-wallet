@@ -11,8 +11,8 @@ import { ToastProvider } from '@providers/toast/toast';
 import { TranslateService } from '@ngx-translate/core';
 
 import lodash from 'lodash';
-import { NetworkType } from 'phantom-ts/model';
-import { PublicKey } from 'phantom-ts/core';
+import { NetworkType } from '@phantomchain/phantom-ts/model';
+import { PublicKey } from '@phantomchain/phantom-ts/core';
 import { AddressMap } from '@models/model';
 import { Platform } from 'ionic-angular/platform/platform';
 import { PinCodeComponent } from '@components/pin-code/pin-code';

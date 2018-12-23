@@ -2,7 +2,7 @@ import { ModalController, NavController, NavParams } from 'ionic-angular';
 import { UserDataProvider } from '@providers/user-data/user-data';
 import { PhantomApiProvider } from '@providers/phantom-api/phantom-api';
 import { ToastProvider } from '@providers/toast/toast';
-import { PrivateKey, PublicKey } from 'phantom-ts';
+import { PrivateKey, PublicKey } from '@phantomchain/phantom-ts';
 import { Wallet } from '@models/model';
 import { NetworkProvider } from '@providers/network/network';
 import { SettingsDataProvider } from '@providers/settings-data/settings-data';

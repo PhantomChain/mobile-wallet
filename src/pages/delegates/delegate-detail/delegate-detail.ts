@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams, ViewController, AlertController } 
 
 import { PhantomApiProvider } from '@providers/phantom-api/phantom-api';
 import { UserDataProvider } from '@providers/user-data/user-data';
-import { Delegate, Fees, Network } from 'phantom-ts';
+import { Delegate, Fees, Network } from '@phantomchain/phantom-ts';
 
 import { Wallet } from '@models/wallet';
 

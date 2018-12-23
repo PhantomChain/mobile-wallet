@@ -9,7 +9,7 @@ import { ContactsProvider } from '@providers/contacts/contacts';
 import { UserSettings, Wallet, Transaction } from '@models/model';
 import { TranslateService } from '@ngx-translate/core';
 
-import * as phantomts from 'phantom-ts';
+import * as phantomts from '@phantomchain/phantom-ts';
 import lodash from 'lodash';
 import stringHash from 'string-hash';
 

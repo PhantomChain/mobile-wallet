@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, MenuController, ViewController } from 'ionic-angular';
 
-import { Crypto } from 'phantom-ts/utils';
+import { Crypto } from '@phantomchain/phantom-ts/utils';
 
 @IonicPage()
 @Component({

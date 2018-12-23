@@ -4,7 +4,7 @@ import { MarketCurrency } from '@models/model';
 import { UserDataProvider } from '@providers/user-data/user-data';
 import { MarketDataProvider } from '@providers/market-data/market-data';
 import { SettingsDataProvider } from '@providers/settings-data/settings-data';
-import { Network } from 'phantom-ts/model';
+import { Network } from '@phantomchain/phantom-ts/model';
 import { Amount } from '@components/amount/amount.model';
 
 @Component({

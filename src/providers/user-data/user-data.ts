@@ -11,10 +11,10 @@ import { Contact, Profile, Wallet, WalletKeys } from '@models/model';
 
 import lodash from 'lodash';
 import { v4 as uuid } from 'uuid';
-import { Network, NetworkType } from 'phantom-ts/model';
+import { Network, NetworkType } from '@phantomchain/phantom-ts/model';
 
 import * as constants from '@app/app.constants';
-import { Delegate } from 'phantom-ts';
+import { Delegate } from '@phantomchain/phantom-ts';
 import { TranslatableObject } from '@models/translate';
 import { StoredNetwork } from '@models/stored-network';
 

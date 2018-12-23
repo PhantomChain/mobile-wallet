@@ -4,7 +4,7 @@ import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angul
 import { PhantomApiProvider } from '@providers/phantom-api/phantom-api';
 
 import bip39 from 'bip39';
-import { Fees, Network } from 'phantom-ts';
+import { Fees, Network } from '@phantomchain/phantom-ts';
 
 @IonicPage()
 @Component({

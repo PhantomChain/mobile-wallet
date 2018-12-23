@@ -9,7 +9,7 @@ import { MarketDataProvider } from '@providers/market-data/market-data';
 import { SettingsDataProvider } from '@providers/settings-data/settings-data';
 import { Transaction, MarketTicker, MarketCurrency } from '@models/model';
 
-import { Network } from 'phantom-ts/model';
+import { Network } from '@phantomchain/phantom-ts/model';
 
 import lodash from 'lodash';
 import { AddressCheckResult} from '@providers/address-checker/address-check-result';

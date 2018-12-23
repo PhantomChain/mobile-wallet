@@ -10,12 +10,12 @@ import { ToastProvider } from '@providers/toast/toast';
 
 import { Transaction, TranslatableObject } from '@models/model';
 
-import * as phantomts from 'phantom-ts';
+import * as phantomts from '@phantomchain/phantom-ts';
 import lodash from 'lodash';
 import * as constants from '@app/app.constants';
-import phantomtsConfig from 'phantom-ts/config';
+import phantomtsConfig from '@phantomchain/phantom-ts/config';
 import { PhantomUtility } from '../../utils/phantom-utility';
-import { Delegate } from 'phantom-ts';
+import { Delegate } from '@phantomchain/phantom-ts';
 import { StoredNetwork } from '@models/stored-network';
 
 @Injectable()

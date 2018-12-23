@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, LoadingController, ViewController } from 'ionic-angular';
 import { ToastProvider } from '@providers/toast/toast';
-import { LoaderAutoConfigure, Network, NetworkType, Peer, PeerVersion2ConfigResponse } from 'phantom-ts';
-import * as phantomts from 'phantom-ts';
+import { LoaderAutoConfigure, Network, NetworkType, Peer, PeerVersion2ConfigResponse } from '@phantomchain/phantom-ts';
+import * as phantomts from '@phantomchain/phantom-ts';
 import lodash from 'lodash';
 
 @IonicPage()

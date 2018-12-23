@@ -9,8 +9,8 @@ import { MarketDataProvider } from '@providers/market-data/market-data';
 import { SettingsDataProvider } from '@providers/settings-data/settings-data';
 
 import { Profile, MarketCurrency, MarketTicker, MarketHistory, Wallet } from '@models/model';
-import { PublicKey } from 'phantom-ts/core';
-import { Network } from 'phantom-ts/model';
+import { PublicKey } from '@phantomchain/phantom-ts/core';
+import { Network } from '@phantomchain/phantom-ts/model';
 
 import { TranslateService } from '@ngx-translate/core';
 

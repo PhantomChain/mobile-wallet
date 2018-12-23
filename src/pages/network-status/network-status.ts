@@ -8,7 +8,7 @@ import 'rxjs/add/operator/debounceTime';
 
 import { PhantomApiProvider } from '@providers/phantom-api/phantom-api';
 
-import { Network, Peer } from 'phantom-ts';
+import { Network, Peer } from '@phantomchain/phantom-ts';
 
 import * as constants from '@app/app.constants';
 import { TranslateService } from '@ngx-translate/core';

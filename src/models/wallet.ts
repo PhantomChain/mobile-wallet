@@ -1,4 +1,4 @@
-import { Account } from 'phantom-ts/model';
+import { Account } from '@phantomchain/phantom-ts/model';
 
 import { MarketCurrency } from '@models/market';
 import { Transaction } from '@models/transaction';

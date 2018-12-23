@@ -1,5 +1,5 @@
-import { Transaction as TransactionModel, TransactionType } from 'phantom-ts/model';
-import phantomConfig from 'phantom-ts/config';
+import { Transaction as TransactionModel, TransactionType } from '@phantomchain/phantom-ts/model';
+import phantomConfig from '@phantomchain/phantom-ts/config';
 
 import { MarketCurrency, MarketHistory, MarketTicker } from '@models/market';
 

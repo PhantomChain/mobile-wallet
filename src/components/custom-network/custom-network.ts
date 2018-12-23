@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import lodash from 'lodash';
-import { Network } from 'phantom-ts/model';
+import { Network } from '@phantomchain/phantom-ts/model';
 import { UserDataProvider } from '@providers/user-data/user-data';
 import { ModalController } from 'ionic-angular';
 import { EditNetworkAction, EditNetworkResult } from '@root/src/modals/custom-network-edit/custom-network-edit';

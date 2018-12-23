@@ -5,7 +5,7 @@ import { Subject } from 'rxjs/Subject';
 import { PhantomApiProvider } from '@providers/phantom-api/phantom-api';
 import { UserDataProvider } from '@providers/user-data/user-data';
 import { ToastProvider } from '@providers/toast/toast';
-import { Delegate, Network, VoteType, TransactionVote } from 'phantom-ts';
+import { Delegate, Network, VoteType, TransactionVote } from '@phantomchain/phantom-ts';
 
 import { Wallet, WalletKeys } from '@models/model';
 

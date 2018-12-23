@@ -24,7 +24,7 @@ import { MarketDataProvider } from '@providers/market-data/market-data';
 import { SettingsDataProvider } from '@providers/settings-data/settings-data';
 
 import lodash from 'lodash';
-import { Network, Fees, TransactionDelegate, PrivateKey, TransactionType } from 'phantom-ts';
+import { Network, Fees, TransactionDelegate, PrivateKey, TransactionType } from '@phantomchain/phantom-ts';
 
 import { TranslateService } from '@ngx-translate/core';
 

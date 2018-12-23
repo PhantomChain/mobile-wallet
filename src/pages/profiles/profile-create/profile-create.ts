@@ -8,7 +8,7 @@ import { Profile } from '@models/profile';
 import { UserDataProvider } from '@providers/user-data/user-data';
 import { ToastProvider } from '@providers/toast/toast';
 import lodash from 'lodash';
-import { Network } from 'phantom-ts/model';
+import { Network } from '@phantomchain/phantom-ts/model';
 import { TranslateService } from '@ngx-translate/core';
 
 @IonicPage()

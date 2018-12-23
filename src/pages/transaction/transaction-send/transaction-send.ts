@@ -11,8 +11,8 @@ import { ToastProvider } from '@providers/toast/toast';
 
 import { AccountAutoCompleteService } from '@providers/account-auto-complete/account-auto-complete';
 
-import { PublicKey } from 'phantom-ts/core';
-import { Network, Fees } from 'phantom-ts/model';
+import { PublicKey } from '@phantomchain/phantom-ts/core';
+import { Network, Fees } from '@phantomchain/phantom-ts/model';
 import { Subject } from 'rxjs/Subject';
 
 import { TruncateMiddlePipe } from '@pipes/truncate-middle/truncate-middle';
@@ -21,7 +21,7 @@ import { PinCodeComponent } from '@components/pin-code/pin-code';
 import { ConfirmTransactionComponent } from '@components/confirm-transaction/confirm-transaction';
 import { QRScannerComponent } from '@components/qr-scanner/qr-scanner';
 import * as constants from '@app/app.constants';
-import { TransactionSend } from 'phantom-ts';
+import { TransactionSend } from '@phantomchain/phantom-ts';
 
 import { AutoCompleteComponent } from 'ionic2-auto-complete';
 import { AutoCompleteAccount, AutoCompleteAccountType } from '@models/contact';
