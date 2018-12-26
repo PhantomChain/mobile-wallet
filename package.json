@@ -98,7 +98,7 @@
     "ng2-charts": "^1.6.0",
     "ngx-filter-pipe": "^1.0.2",
     "node-forge": "^0.7.6",
-    "@phantomchain/phantom-ts": "^0.3.16",
+    "@phantomchain/phantom-ts": "^0.3.18",
     "phantomjscore": "github:PhantomChain/phantom-js#master",
     "rxjs": "^5.5.11",
     "string-hash": "^1.1.3",
